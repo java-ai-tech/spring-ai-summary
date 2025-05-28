@@ -10,4 +10,11 @@
     <artifactId>spring-ai-chat-memory</artifactId>
 
     <name>spring-ai-chat-memory</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
+    </dependencies>
 </project>
