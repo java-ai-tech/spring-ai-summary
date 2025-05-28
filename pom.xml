@@ -10,8 +10,18 @@
     <groupId>com.glmapper</groupId>
     <artifactId>spring-ai-summary</artifactId>
     <version>0.0.1</version>
-    <name>llm-spring-ai-guides</name>
+    <packaging>pom</packaging>
+    <name>spring-ai-summary</name>
     <description>spring ai summary</description>
+    <modules>
+        <module>spring-ai-chat</module>
+        <module>spring-ai-embedding</module>
+        <module>spring-ai-rag</module>
+        <module>spring-ai-mcp</module>
+        <module>spring-ai-evaluation</module>
+        <module>spring-ai-chat-memory</module>
+        <module>spring-ai-tool-calling</module>
+    </modules>
 
     <properties>
         <java.version>21</java.version>

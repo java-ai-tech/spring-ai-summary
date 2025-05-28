@@ -32,10 +32,10 @@ build/
 ### VS Code ###
 .vscode/
 application-deepseek.properties
-/src/main/resources/application-deepseek.properties
-/src/main/resources/application-doubao.properties
-/src/main/resources/application-openai.properties
-/src/main/resources/application-qwen.properties
+/spring-ai-chat/spring-ai-chat-deepseek/src/main/resources/application-deepseek.properties
+/spring-ai-chat/spring-ai-chat-doubao/src/main/resources/application-doubao.properties
+/spring-ai-chat/spring-ai-chat-openai/src/main/resources/application-openai.properties
+/spring-ai-chat/spring-ai-chat-qwen/src/main/resources/application-qwen.properties
 /mvnw.cmd
 /mvnw
 /.mvn/
