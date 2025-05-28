@@ -1,0 +1,9 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: "weather-mcp-server"
+        version: "0.0.1"
+        stdio: true
+  main:
+    web-application-type: none

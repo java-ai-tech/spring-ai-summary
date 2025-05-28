@@ -8,5 +8,10 @@
     </parent>
 
     <artifactId>spring-ai-mcp</artifactId>
+    <packaging>pom</packaging>
     <name>spring-ai-mcp</name>
+    <modules>
+        <module>mcp-client</module>
+        <module>mcp-server-weather</module>
+    </modules>
 </project>

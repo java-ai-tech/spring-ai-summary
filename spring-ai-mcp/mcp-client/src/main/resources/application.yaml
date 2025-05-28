@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mcp-client
+  profiles:
+    active: mcp-client
+    ai:
+      openai:
+        api-key: sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        chat:
+          base-url: https://api.deepseek.com
+          completions-path: /v1/chat/completions
+          options:
+            model: deepseek-chat

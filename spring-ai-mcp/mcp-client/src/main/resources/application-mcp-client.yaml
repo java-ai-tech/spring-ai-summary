@@ -1,0 +1,53 @@
+spring:
+  ai:
+    mcp:
+      client:
+        toolcallback:
+          enabled: true
+        # sse 方式
+        sse:
+          connections:
+            # MCP Server名称，自己随便取名
+            weather-mcp-server:
+              # url 根据 MCP Server 配置调整
+              url: "http://127.0.0.1:8081"
+        # stdio 方式
+        stdio:
+          connections:
+            mysql:
+              # Windows 操作系统使用npx.cmd，Linux 和 macOS 使用 npx
+              command: "npx"
+              args:
+                # mcp server名称
+                - "mysql-mcp-server"
+              env:
+                # 数据库ip
+                "MYSQL_HOST": "127.0.0.1"
+                # 数据库服务端口
+                "MYSQL_PORT": "3306"
+                # 数据库用户名
+                "MYSQL_USER": "root"
+                # 数据库密码
+                "MYSQL_PASSWORD": "Glmapper@2018"
+                # 数据库名称
+                "MYSQL_DATABASE": "glmapper"
+            filesystem:
+              # Windows 操作系统使用 npx.cmd，Linux 和 MacOS 使用 npx
+              command: "npx"
+              args:
+                - "-y"
+                - "@modelcontextprotocol/server-filesystem"
+                # 在此文件夹内进行文件操作，需根据具体需求调整目标文件夹
+                - "/Users/glmapper/Documents"
+            "fetch": {
+              command: "uvx",
+              "args": ["mcp-server-fetch"]
+            }
+            "amap-maps": {
+              "command": "npx",
+              "args": [ "-y", "@amap/amap-maps-mcp-server" ],
+              "env": {
+                "AMAP_MAPS_API_KEY": "xxx-xxxx-xxxx-xxxx-xxxxxxxxxx" # 替换为你的高德地图API密钥
+              }
+            }
+        type: sync

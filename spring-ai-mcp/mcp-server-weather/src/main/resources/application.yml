@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: mcp-server-weather
+  profiles:
+    active: sse
+

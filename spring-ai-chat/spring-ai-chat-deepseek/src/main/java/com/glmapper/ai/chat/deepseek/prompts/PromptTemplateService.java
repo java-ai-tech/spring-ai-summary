@@ -35,6 +35,12 @@ public class PromptTemplateService {
      * 使用 Prompt 模板进行聊天，使用占位符
      * 这里使用了默认的模版渲染器，能够识别 {} 格式的占位符
      *
+     * 注释中的代码是使用 PromptTemplate 的方式来实现同样的功能：
+     *
+     * PromptTemplate promptTemplate = new PromptTemplate("使用 json 格式输出这段文字： {content}");
+     * Prompt prompt = promptTemplate.create(Map.of("content", userInput));
+     * this.deepSeekChatClient.prompt(prompt).call().content();
+     *
      * @param userInput 用户输入
      */
     public String prompt02(String userInput) {
@@ -48,6 +54,17 @@ public class PromptTemplateService {
     /**
      * 使用 Prompt 模板进行聊天，使用自定义占位符
      * 这里使用了自定义的模版渲染器，能够识别自定义  <> 格式的占位符
+     *
+     * 注释中的代码是使用 PromptTemplate 的方式来实现同样的功能：
+     *
+     * PromptTemplate promptTemplate = PromptTemplate.builder()
+     *     .renderer(StTemplateRenderer.builder().startDelimiterToken('<').endDelimiterToken('>').build())
+     *     .template("""
+     *             使用 json 格式输出这段文字： <content>.
+     *             """)
+     *     .build();
+     * String prompt = promptTemplate.render(Map.of("content", userInput));
+     * this.deepSeekChatClient.prompt(prompt).call().content();
      *
      * @param userInput 用户输入
      */
