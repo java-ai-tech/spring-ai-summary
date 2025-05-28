@@ -3,12 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.glmapper</groupId>
-        <artifactId>spring-ai-summary</artifactId>
+        <artifactId>spring-ai-chat</artifactId>
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>spring-ai-embedding</artifactId>
-    <name>spring-ai-embedding</name>
+    <artifactId>spring-ai-chat-multi-openai</artifactId>
+    <packaging>jar</packaging>
+
+    <name>spring-ai-chat-multi-openai</name>
 
     <dependencies>
         <dependency>

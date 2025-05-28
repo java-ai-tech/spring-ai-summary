@@ -8,4 +8,11 @@
     </parent>
     <artifactId>spring-ai-chat-deepseek</artifactId>
     <name>spring-ai-chat-deepseek</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-deepseek</artifactId>
+        </dependency>
+    </dependencies>
 </project>

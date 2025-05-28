@@ -8,4 +8,13 @@
     </parent>
     <artifactId>spring-ai-chat-openai</artifactId>
     <name>spring-ai-chat-openai</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
+    </dependencies>
 </project>
+
+

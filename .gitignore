@@ -36,8 +36,10 @@ application-deepseek.properties
 /spring-ai-chat/spring-ai-chat-doubao/src/main/resources/application-doubao.properties
 /spring-ai-chat/spring-ai-chat-openai/src/main/resources/application-openai.properties
 /spring-ai-chat/spring-ai-chat-qwen/src/main/resources/application-qwen.properties
+/spring-ai-chat/spring-ai-chat-multi/src/main/resources/application-multi-chat.properties
 /mvnw.cmd
 /mvnw
 /.mvn/
 /src/main/resources/application-multi-chat.properties
-/src/main/resources/application-doubao-embedding.properties
+/spring-ai-embedding/src/main/resources/application-doubao-embedding.properties
+/spring-ai-embedding/src/main/resources/application-doubao-embedding.properties

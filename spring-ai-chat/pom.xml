@@ -9,10 +9,18 @@
     <artifactId>spring-ai-chat</artifactId>
     <packaging>pom</packaging>
     <name>spring-ai-chat</name>
+
+    <properties>
+        <java.version>21</java.version>
+        <spring-ai.version>1.0.0</spring-ai.version>
+    </properties>
+
     <modules>
         <module>spring-ai-chat-openai</module>
         <module>spring-ai-chat-deepseek</module>
         <module>spring-ai-chat-doubao</module>
         <module>spring-ai-chat-qwen</module>
+        <module>spring-ai-chat-multi</module>
+        <module>spring-ai-chat-multi-openai</module>
     </modules>
 </project>

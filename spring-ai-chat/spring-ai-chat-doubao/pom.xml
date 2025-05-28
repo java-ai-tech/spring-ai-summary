@@ -8,4 +8,11 @@
     </parent>
     <artifactId>spring-ai-chat-doubao</artifactId>
     <name>spring-ai-chat-doubao</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
+    </dependencies>
 </project>
