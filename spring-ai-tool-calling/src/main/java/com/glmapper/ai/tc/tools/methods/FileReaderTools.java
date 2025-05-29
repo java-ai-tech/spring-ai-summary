@@ -1,4 +1,4 @@
-package com.glmapper.ai.tc.tools;
+package com.glmapper.ai.tc.tools.methods;
 
 import org.springframework.ai.tool.annotation.Tool;
 
