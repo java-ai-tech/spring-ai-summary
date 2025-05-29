@@ -28,9 +28,9 @@ spring:
                 # 数据库用户名
                 "MYSQL_USER": "root"
                 # 数据库密码
-                "MYSQL_PASSWORD": "Glmapper@2018"
+                "MYSQL_PASSWORD": "xxxxxx" # 替换为你的数据库密码
                 # 数据库名称
-                "MYSQL_DATABASE": "glmapper"
+                "MYSQL_DATABASE": "glmapper" # 替换为你的数据库名称
             filesystem:
               # Windows 操作系统使用 npx.cmd，Linux 和 MacOS 使用 npx
               command: "npx"
