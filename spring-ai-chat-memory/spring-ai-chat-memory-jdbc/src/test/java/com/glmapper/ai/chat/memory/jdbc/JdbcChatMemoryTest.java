@@ -7,6 +7,7 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.springframework.ai.chat.memory.repository.jdbc.JdbcChatMemoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -29,8 +30,17 @@ public class JdbcChatMemoryTest {
     @Autowired
     private ChatMemoryService chatMemoryService;
 
+    @Autowired
+    private JdbcChatMemoryRepository chatMemoryRepository;
+
     @BeforeEach
     void setUp() {
+        chatMemoryRepository.findConversationIds().forEach(conversationId -> {
+            if (conversationId.startsWith("test-")) {
+                // 清理测试用的对话记录
+                chatMemoryRepository.deleteByConversationId(conversationId);
+            }
+        });
         // 检查服务是否正确注入
         assertNotNull(chatMemoryService, "ChatMemoryService should be injected");
     }
@@ -39,7 +49,7 @@ public class JdbcChatMemoryTest {
     @Order(1)
     @DisplayName("测试聊天记忆功能 - 上下文保持")
     void testChatMemoryContextRetention() {
-        String CONVERSATION_ID = "naming-202505281800";
+        String CONVERSATION_ID = "test-naming-202505281800";
         // 第一轮对话：自我介绍
         String firstMessage = "hello, my name is glmapper";
         String firstResponse = chatMemoryService.call(firstMessage, CONVERSATION_ID);
@@ -61,17 +71,20 @@ public class JdbcChatMemoryTest {
         // 验证AI是否记住了用户的名字
         assertTrue(secondResponse.contains("glmapper") || secondResponse.toLowerCase()
                 .contains("glmapper"), "AI 应该记住用户的名字");
+
+        chatMemoryRepository.deleteByConversationId(CONVERSATION_ID);
     }
 
     @Test
     @Order(2)
     @DisplayName("测试多轮对话的连续性")
     void testMultiTurnConversationContinuity() {
+        String CONVERSATION_ID = "test-naming-202505291800";
         // 模拟一个完整的对话流程
-        String[] messages = {"我正在学习Spring AI框架", "Spring AI有哪些主要特性？", "刚才你提到的特性中，哪个最重要？"};
+        String[] messages = {"我正在学习 Spring AI框架", "Spring AI有哪些主要特性？", "刚才你提到的特性中，哪个最重要？"};
         String[] responses = new String[messages.length];
         for (int i = 0; i < messages.length; i++) {
-            responses[i] = chatMemoryService.call(messages[i], null);
+            responses[i] = chatMemoryService.call(messages[i], CONVERSATION_ID);
             assertNotNull(responses[i], "第" + (i + 1) + "次响应不应该为空");
             System.out.println("\n第" + (i + 1) + "轮对话:");
             System.out.println("用户: " + messages[i]);
@@ -80,13 +93,14 @@ public class JdbcChatMemoryTest {
         // 验证最后一次响应是否引用了之前的对话内容
         String lastResponse = responses[responses.length - 1];
         assertTrue(lastResponse.length() > 10, "最后的响应应该有实质内容");
+        chatMemoryRepository.deleteByConversationId(CONVERSATION_ID);
     }
 
     @Test
     @Order(3)
     @DisplayName("测试对话ID的一致性")
     void testConversationIdConsistency() {
-        String CONVERSATION_ID = "naming-202505281801";
+        String CONVERSATION_ID = "test-naming-202505281801";
         // 这个测试主要验证使用相同的 CONVERSATION_ID
         // 在实际应用中，可以通过日志或其他方式验证
         String message1 = "请记住这个数字：12345";
@@ -106,14 +120,15 @@ public class JdbcChatMemoryTest {
 
         // 验证AI是否记住了数字
         assertTrue(response2.contains("12345"), "AI应该记住之前提到的数字");
+        chatMemoryRepository.deleteByConversationId(CONVERSATION_ID);
     }
 
     @Test
     @Order(4)
     @DisplayName("测试对话ID的非一致性")
     void testConversationIdNonConsistency() {
-        String CONVERSATION_ID1 = "naming-202505281801";
-        String CONVERSATION_ID2 = "naming-202505281802";
+        String CONVERSATION_ID1 = "test-naming-202505281801";
+        String CONVERSATION_ID2 = "test-naming-202505281802";
         // 这个测试主要验证使用相同的 CONVERSATION_ID
         // 在实际应用中，可以通过日志或其他方式验证
         String message1 = "请记住这个数字：12345";
@@ -133,5 +148,9 @@ public class JdbcChatMemoryTest {
 
         // 验证AI是否记住了数字
         assertFalse(response2.contains("12345"), "AI应该记住之前提到的数字");
+
+
+        chatMemoryRepository.deleteByConversationId(CONVERSATION_ID1);
+        chatMemoryRepository.deleteByConversationId(CONVERSATION_ID2);
     }
 }

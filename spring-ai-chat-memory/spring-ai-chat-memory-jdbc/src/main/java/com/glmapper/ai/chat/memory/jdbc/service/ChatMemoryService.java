@@ -4,12 +4,15 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.memory.MessageWindowChatMemory;
 import org.springframework.ai.chat.memory.repository.jdbc.JdbcChatMemoryRepository;
+import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @Classname StorageService
@@ -36,11 +39,11 @@ public class ChatMemoryService {
                 .build();
     }
 
-
     public String call(String message, String conversationId) {
         UserMessage userMessage = new UserMessage(message);
         this.chatMemory.add(conversationId, userMessage);
-        ChatResponse response = chatModel.call(new Prompt(chatMemory.get(conversationId)));
+        List<Message> messages = chatMemory.get(conversationId);
+        ChatResponse response = chatModel.call(new Prompt(messages));
         chatMemory.add(conversationId, response.getResult().getOutput());
         return response.getResult().getOutput().getText();
     }
@@ -62,4 +65,7 @@ public class ChatMemoryService {
     }
 
 
+    public ChatMemory getChatMemory() {
+        return chatMemory;
+    }
 }
