@@ -9,4 +9,10 @@
 
     <artifactId>spring-ai-chat-qwen</artifactId>
     <name>spring-ai-chat-qwen</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
+    </dependencies>
 </project>
