@@ -1,8 +1,8 @@
 # Spring AI Summary
 
 <p align="left">
-  <span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">[🇨🇳 中文](README.md)</span>
-  <span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">[🇺🇸 English](README_EN.md)</span>
+  <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
+  <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
 </p>
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
