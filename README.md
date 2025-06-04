@@ -1,5 +1,10 @@
 # Spring AI Summary
 
+<p align="left">
+  <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
+  <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
+</p>
+
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
 
 🚀🚀🚀 本项目是一个 Spring AI 快速入门的样例工程项目，旨在通过一些小的案例展示 Spring AI 框架的核心功能和使用方法。
