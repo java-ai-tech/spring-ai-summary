@@ -25,4 +25,4 @@ spring.ai.openai.chat.completions-path=/v1/chat/completions
 ```
 修改完成之后即可以在 IDEA 中启动项目，然后根据 controller 中提供的接口进行访问测试。
 
-⚠️ **由于本人为开通 OpenAI 的 API 访问，因此这里一笔带过**
+⚠️ **由于本人未开通 OpenAI 的 API 访问，因此这里一笔带过**
