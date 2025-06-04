@@ -5,11 +5,11 @@
 🚀🚀🚀 本项目是一个 Spring AI 快速入门的样例工程项目，旨在通过一些小的案例展示 Spring AI 框架的核心功能和使用方法。
 项目采用模块化设计，每个模块都专注于特定的功能领域，便于学习和扩展。
 
-## 关于 Spring AI
+## 📖 关于 Spring AI
 
 Spring AI 项目的目标是简化集成人工智能功能的应用程序的开发过程，避免引入不必要的复杂性。关于 Spring AI 的更多信息，请访问 [Spring AI 官方文档](https://spring.io/projects/spring-ai)。
 
-## 项目结构
+## 🗂️ 项目结构
 
 本工程采用模块化设计，按照功能特性主要划分为以下几个模块：
 
@@ -30,7 +30,7 @@ spring-ai-summary/
 └── spring-ai-mcp/                    # MCP 示例
 ```
 
-## 核心功能实现
+## 🧩 核心功能实现
 
 本案例工程的核心功能实现包括：
 
@@ -46,7 +46,7 @@ spring-ai-summary/
 
 ## 🚀 快速开始
 
-### 环境要求
+### ⚙️ 环境要求
 
 - SpringBoot 3.3.6
 - Spring AI 1.0.0
@@ -54,14 +54,14 @@ spring-ai-summary/
 - Maven 3.6+
 - Docker（用于运行 Milvus）
 
-### 1. 克隆项目
+### 1. 🧬 克隆项目
 
 ```bash
 git clone https://github.com/glmapper/spring-ai-summary.git
 cd spring-ai-summary
 ```
 
-### 2. 配置环境变量
+### 2. 🛠️ 配置环境变量
 
 对于每个模块的 resource 文件夹下的 `application.yml`/`application.properties` 文件，根据你的需求配置相应的 API 密钥。如 **spring-ai-chat-deepseek** 模块：
 ```properties
@@ -73,7 +73,7 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
 将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。
 
-### 3. 启动 Milvus
+### 3. 🗄️ 启动 Milvus
 
 Milvus 是一个开源的向量数据库，用于存储和检索高维向量数据。本项目是使用 Docker 来运行 Milvus，当然你也可以选择其他方式安装 Milvus或者使用已经部署好的 Milvus 服务。
 
@@ -83,7 +83,7 @@ Milvus 是一个开源的向量数据库，用于存储和检索高维向量数�
 
 ⚠️本人的电脑是 Mac Air M2 芯片，使用官方文档中的 docker-compose 文件启动 Milvus 时，遇到 `milvus-standalone` 镜像不匹配问题。
 
-### 4. 运行示例
+### 4. ▶️ 运行示例
 
 完成上述步骤后，你可以选择运行不同的示例模块来体验 Spring AI 的功能。如启动运行 **spring-ai-chat-deepseek** 模块（具体端口可以根据你自己的配置而定）：
 ```bash
@@ -135,7 +135,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 
 ## 📚 模块说明
 
-### 1. 聊天模块 (spring-ai-chat)
+### 1. 💬 聊天模块 (spring-ai-chat)
 
 提供多种 LLM 模型的接入实现，支持：
 - 单模型对话：支持 OpenAI、通义千问、豆包、DeepSeek 等模型
@@ -143,7 +143,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - 提示词模板：支持自定义提示词模板和变量替换
 - Token 统计：支持输入输出 Token 统计和成本估算
 
-### 2. RAG 模块 (spring-ai-rag)
+### 2. 📖 RAG 模块 (spring-ai-rag)
 
 实现检索增强生成，包含：
 - 文档向量化：支持多种文档格式的向量化处理
@@ -151,7 +151,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - 语义检索：支持相似度搜索和混合检索
 - 问答生成：基于检索结果生成准确的回答
 
-### 3. 工具调用模块 (spring-ai-tool-calling)
+### 3. 🛠️ 工具调用模块 (spring-ai-tool-calling)
 
 展示如何实现工具函数调用：
 - 函数定义：使用 @Tool 注解定义工具函数
@@ -159,7 +159,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - 动态调用：支持运行时动态调用工具
 - 结果处理：支持工具调用结果的格式化和处理
 
-### 4. 会话记忆模块 (spring-ai-chat-memory)
+### 4. 🧠 会话记忆模块 (spring-ai-chat-memory)
 
 提供会话历史管理：
 - JDBC 持久化：支持数据库存储会话历史
@@ -218,7 +218,6 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
        <spring-ai.version>1.0.0</spring-ai.version>
    </properties>
    ```
-
 3. **运行测试**
    ```bash
    # 运行所有测试
@@ -227,47 +226,22 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
    mvn test -pl spring-ai-chat
    ```
 
-### 代码审查清单
-
-提交 PR 前请确保：
-
-1. **代码质量**
-   - [ ] 代码符合项目规范
-   - [ ] 添加了必要的注释
-   - [ ] 没有重复代码
-   - [ ] 变量命名清晰
-
-2. **测试覆盖**
-   - [ ] 添加了单元测试
-   - [ ] 测试覆盖了主要功能
-   - [ ] 所有测试通过
-
-3. **文档更新**
-   - [ ] 更新了 README（如需要）
-   - [ ] 更新了 API 文档（如需要）
-   - [ ] 添加了使用示例（如需要）
-
-4. **提交规范**
-   - [ ] 提交信息符合规范
-   - [ ] 提交粒度合适
-   - [ ] 没有敏感信息
-
 ## 📝 注意事项
 
 1. **API 密钥安全**
-   - 使用环境变量存储 API 密钥
-   - 不要在代码中硬编码密钥
-   - 定期轮换密钥
+   - 建议使用环境变量存储 API 密钥，避免泄露风险
+   - 切勿在代码仓库中硬编码密钥
+   - 定期轮换密钥，提升安全性
 
 2. **Milvus 使用**
-   - 确保创建正确的向量维度
-   - 查询前需要加载集合
-   - 注意索引创建
+   - 创建集合时需确保向量维度与 embedding 模型一致
+   - 检索前需先加载集合（load collection）
+   - 创建索引后再进行检索，提升性能
 
 3. **Token 使用**
-   - 监控 Token 消耗
-   - 设置合理的限制
-   - 实现缓存机制
+   - 持续监控 Token 消耗，避免超额
+   - 设置合理的 Token 限制，防止滥用
+   - 推荐实现缓存机制，提升响应速度与成本控制
 
 ## 📄 License & 说明
 
