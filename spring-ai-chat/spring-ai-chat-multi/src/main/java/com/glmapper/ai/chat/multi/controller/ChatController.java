@@ -25,7 +25,15 @@ public class ChatController {
     private ChatClient deepSeekChatClient;
 
     @RequestMapping("/chat")
-    public void chat() {
+    public String chat() {
+        String dsAnswer = this.deepSeekChatClient.prompt()
+                .user("who are you?")
+                .call().content();
 
+        String openAiAnswer = this.openAiChatClient.prompt()
+                .user("who are you?")
+                .call().content();
+
+        return "DeepSeek: " + dsAnswer + "\nOpenAI: " + openAiAnswer;
     }
 }

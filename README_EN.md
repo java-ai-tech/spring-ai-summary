@@ -1,11 +1,12 @@
 # Spring AI Summary
 
+![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
+
 <p align="left">
   <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
   <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
 </p>
 
-![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
 
 🚀🚀🚀 This project is a quick-start sample for Spring AI, designed to demonstrate the core features and usage of the Spring AI framework through practical mini-cases. The project adopts a modular design, with each module focusing on a specific functional area for easy learning and extension.
 

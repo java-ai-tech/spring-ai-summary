@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Classname ChatController
- * @Description deepseek ChatController
+ * @Description doubao ChatController
  * @Date 2025/5/28 13:51
  * @Created by glmapper
  */
