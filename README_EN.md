@@ -35,6 +35,22 @@ spring-ai-summary/
 └── spring-ai-mcp/                    # MCP examples
 ```
 
+**The documentation list for different project modules is as follows.：**
+
+* **spring-ai-chat-chat module**
+   * [spring-ai-chat-openai](spring-ai-chat/spring-ai-chat-openai/README.md) - OpenAI Model access
+   * [spring-ai-chat-qwen](spring-ai-chat/spring-ai-chat-qwen/README.md) - Qwen Model access
+   * [spring-ai-chat-doubao](spring-ai-chat/spring-ai-chat-doubao/README.md) - Doubao Model access
+   * [spring-ai-chat-deepseek](spring-ai-chat/spring-ai-chat-deepseek/README.md) - DeepSeek Model access
+   * [spring-ai-chat-multi](spring-ai-chat/spring-ai-chat-multi/README.md) - multi chat Model access
+   * [spring-ai-chat-multi-openai](spring-ai-chat/spring-ai-chat-multi-openai/README.md) - multi OpenAI protocol Model access
+* **[spring-ai-embedding-文本向量化服务]()** --to be added
+* **[spring-ai-rag-RAG 检索增强生成]()** --to be added
+* **[spring-ai-tool-calling-工具函数调用示例]()** --to be added
+* **[spring-ai-chat-memory-会话记忆管理]()** --to be added
+* **[spring-ai-mcp-MCP 示例]()** --to be added
+* **[spring-ai-evaluation-AI 回答评估]()** --to be added
+* 
 ## 🧩 Core Features
 
 This sample project implements the following core features:

@@ -25,8 +25,8 @@ spring-ai-summary/
 │   ├── spring-ai-chat-qwen/          # 通义千问模型接入
 │   ├── spring-ai-chat-doubao/        # 豆包模型接入
 │   ├── spring-ai-chat-deepseek/      # DeepSeek 模型接入
-│   ├── spring-ai-chat-multi/         # 多模型并行调用
-│   └── spring-ai-chat-multi-openai/  # OpenAI 多模型并行调用
+│   ├── spring-ai-chat-multi/         # 多 chat 模型调用
+│   └── spring-ai-chat-multi-openai/  # 多 OpenAI 协议模型调用
 ├── spring-ai-rag/                    # RAG 检索增强生成
 ├── spring-ai-embedding/              # 文本向量化服务
 ├── spring-ai-tool-calling/           # 工具函数调用示例
@@ -34,6 +34,22 @@ spring-ai-summary/
 ├── spring-ai-evaluation/             # AI 回答评估
 └── spring-ai-mcp/                    # MCP 示例
 ```
+
+**不同工程模块的文档列表如下：**
+
+* **spring-ai-chat-聊天模块**
+  * [spring-ai-chat-openai](spring-ai-chat/spring-ai-chat-openai/README.md) - OpenAI 模型接入
+  * [spring-ai-chat-qwen](spring-ai-chat/spring-ai-chat-qwen/README.md) - 通义千问模型接入
+  * [spring-ai-chat-doubao](spring-ai-chat/spring-ai-chat-doubao/README.md) - 豆包模型接入
+  * [spring-ai-chat-deepseek](spring-ai-chat/spring-ai-chat-deepseek/README.md) - DeepSeek 模型接入
+  * [spring-ai-chat-multi](spring-ai-chat/spring-ai-chat-multi/README.md) - 多 chat 模型接入
+  * [spring-ai-chat-multi-openai](spring-ai-chat/spring-ai-chat-multi-openai/README.md) - 多 OpenAI 协议模型接入
+* **[spring-ai-embedding-文本向量化服务]()** --待补充
+* **[spring-ai-rag-RAG 检索增强生成]()** --待补充
+* **[spring-ai-tool-calling-工具函数调用示例]()** --待补充
+* **[spring-ai-chat-memory-会话记忆管理]()** --待补充
+* **[spring-ai-mcp-MCP 示例]()** --待补充
+* **[spring-ai-evaluation-AI 回答评估]()** --待补充
 
 ## 🧩 核心功能实现
 
