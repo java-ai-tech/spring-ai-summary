@@ -33,7 +33,7 @@ public class LangChainTextSplitter {
     public void embedding() {
         try {
             TextSplitter splitter = new TokenTextSplitter();
-            URL path = LangChainTextSplitter.class.getClassLoader().getResource("classpath:files/LLM-infer");
+            URL path = LangChainTextSplitter.class.getClassLoader().getResource("classpath:files/test.md");
             String mdContent = Files.readString(Paths.get(path.toURI()), StandardCharsets.UTF_8);
             Document doc = new Document(mdContent);
             List<Document> docs = splitter.split(doc);
