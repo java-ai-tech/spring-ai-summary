@@ -1,4 +1,4 @@
-package com.glmapper;
+package com.glmapper.ai.evaluation;
 
 /**
  * Hello world!
