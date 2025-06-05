@@ -42,6 +42,6 @@ application-deepseek.properties
 /.mvn/
 /src/main/resources/application-multi-chat.properties
 /spring-ai-embedding/src/main/resources/application-doubao-embedding.properties
-/spring-ai-embedding/src/main/resources/application-doubao-embedding.properties
 /spring-ai-mcp/mcp-client/src/main/resources/application-mcp-client-local.yaml
 /spring-ai-rag/src/main/resources/application-qwen.properties
+/spring-ai-evaluation/src/main/resources/application-evaluation.properties
