@@ -22,5 +22,6 @@
         <module>spring-ai-chat-qwen</module>
         <module>spring-ai-chat-multi</module>
         <module>spring-ai-chat-multi-openai</module>
+        <module>spring-ai-chat-ollama</module>
     </modules>
 </project>
