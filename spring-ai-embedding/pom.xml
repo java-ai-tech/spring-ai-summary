@@ -8,7 +8,11 @@
     </parent>
 
     <artifactId>spring-ai-embedding</artifactId>
+    <packaging>pom</packaging>
     <name>spring-ai-embedding</name>
+    <modules>
+        <module>spring-ai-embedding-milvus</module>
+    </modules>
 
     <dependencies>
         <dependency>
