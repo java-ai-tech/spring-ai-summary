@@ -26,10 +26,9 @@ redis/redis-stack:latest
 ③ 一个 API 密钥，给 EmbeddingModel 用于生成向量数据
 
 
+## 自动配置
+Spring AI 为 Redis 向量数据库提供了 Spring Boot 自动配置。要启用它，请将以下依赖添加到项目的 Maven pom.xml 文件中：
 
-
-
-这里使用的是 Redis 来存储向量数据的， 对应的依赖是 `spring-ai-starter-vector-store-redis`，如下：
 ```xml
 <dependencies>
     <dependency>
@@ -39,9 +38,7 @@ redis/redis-stack:latest
 </dependencies>
 ```
 
-
-
-### 配置文件
+## 配置文件
 
 在你启动项目之前，你需要修改 `application.yml` 文件。
 
