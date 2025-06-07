@@ -45,3 +45,4 @@ application-deepseek.properties
 /spring-ai-mcp/mcp-client/src/main/resources/application-mcp-client-local.yaml
 /spring-ai-rag/src/main/resources/application-qwen.properties
 /spring-ai-evaluation/src/main/resources/application-evaluation.properties
+/spring-ai-embedding/spring-ai-embedding-milvus/src/main/resources/application-doubao-embedding.properties
