@@ -23,4 +23,4 @@ spring:
       redis:
         initialize-schema: true
         index-name: glmapper
-        prefix: glmapper
+        prefix: glmapper_
