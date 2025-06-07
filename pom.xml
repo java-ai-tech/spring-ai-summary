@@ -15,7 +15,7 @@
     <description>spring ai summary</description>
     <modules>
         <module>spring-ai-chat</module>
-        <module>spring-ai-embedding</module>
+        <module>spring-ai-vector</module>
         <module>spring-ai-rag</module>
         <module>spring-ai-mcp</module>
         <module>spring-ai-evaluation</module>
