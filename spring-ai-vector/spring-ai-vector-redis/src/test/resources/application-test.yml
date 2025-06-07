@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: redis-vector-store
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      username: ${REDIS_USERNAME:}
+      password: ${REDIS_PASSWORD:123456}
+  ai:
+    openai:
+      api-key: ${QWEN_API_KEY}
+      embedding:
+        # doc reference: https://bailian.console.aliyun.com/?switchAgent=12095181&productCode=p_efm&switchUserType=3&tab=api#/api/?type=model&url=https%3A%2F%2Fhelp.aliyun.com%2Fdocument_detail%2F2712515.html&renderType=iframe
+        base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+        embeddings-path: /embeddings
+        options:
+          model: text-embedding-v4
+    vectorstore:
+      redis:
+        initialize-schema: true
+        index-name: glmapper
+        prefix: glmapper
