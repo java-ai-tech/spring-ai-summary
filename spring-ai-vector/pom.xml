@@ -12,6 +12,7 @@
     <name>spring-ai-embedding</name>
     <modules>
         <module>spring-ai-vector-milvus</module>
+        <module>spring-ai-vector-redis</module>
     </modules>
 
     <dependencies>
