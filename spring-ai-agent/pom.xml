@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.glmapper</groupId>
+        <artifactId>spring-ai-summary</artifactId>
+        <version>0.0.1</version>
+    </parent>
+    <artifactId>spring-ai-agent</artifactId>
+    <packaging>pom</packaging>
+    <name>spring-ai-agent</name>
+
+    <properties>
+        <java.version>21</java.version>
+        <spring-ai.version>1.0.0</spring-ai.version>
+    </properties>
+
+    <modules>
+        <module>spring-ai-workflow</module>
+    </modules>
+
+</project> 
