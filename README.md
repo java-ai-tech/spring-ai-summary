@@ -8,7 +8,12 @@
 </p>
 
 🚀🚀🚀 本项目是一个 Spring AI 快速入门的样例工程项目，旨在通过一些小的案例展示 Spring AI 框架的核心功能和使用方法。
-项目采用模块化设计，每个模块都专注于特定的功能领域，便于学习和扩展。
+项目采用模块化设计，每个模块都专注于特定的功能领域，便于学习和扩展；欢迎加群交流！
+
+<p align="center">
+  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+</p>
+
 
 ## 📖 关于 Spring AI
 
