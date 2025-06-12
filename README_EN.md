@@ -5,18 +5,37 @@
 <p align="left">
   <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
   <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
+  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">📖 Wiki</span></a>
 </p>
 
+🚀🚀🚀 Spring AI Summary is a collection of sample projects based on native Spring AI, designed to help developers quickly master the core features and usage of the Spring AI framework. With a modular design, each module focuses on a specific functional area, providing clear code examples and detailed documentation to help you get started easily and deeply understand the core concepts of the framework.
 
-🚀🚀🚀 This project is a quick-start sample for Spring AI, designed to demonstrate the core features and usage of the Spring AI framework through practical mini-cases. The project adopts a modular design, with each module focusing on a specific functional area for easy learning and extension.
+### Project Features
 
-## 📖 About Spring AI
+- **Modular Design**: Each module focuses on a functional area, such as chat, RAG (Retrieval Augmented Generation), text embedding, tool function calling, chat memory management, etc., making it easy for developers to learn and apply as needed.
+- **Practical Examples**: Each module contains complete sample code and documentation, demonstrating real-world application scenarios of Spring AI, helping you quickly build your own AI applications.
+- **Continuous Updates**: The project keeps up with the latest developments and version updates of Spring AI, optimizing sample code and documentation in a timely manner to ensure content is always up-to-date.
+- **Community Support**: High-quality technical articles and practical experience are shared, offering best practices to help developers better understand and apply Spring AI.
 
-The goal of the Spring AI project is to simplify the development of applications that integrate AI capabilities, avoiding unnecessary complexity. For more information, please visit the [Spring AI official documentation](https://spring.io/projects/spring-ai).
+### Who Is This For?
+
+Spring AI Summary is for developers interested in the Spring AI framework. Whether you are a beginner or an experienced engineer, you can quickly learn the core features of the framework and apply them to real projects through this project.
+
+With Spring AI Summary, you can:
+
+- Master the core concepts and features of Spring AI.
+- Learn how to build efficient AI applications.
+- Get the latest technical trends and practical experience.
+
+Welcome to join the community and explore the infinite possibilities of Spring AI together!
+
+<p align="center">
+  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+</p>
 
 ## 🗂️ Project Structure
 
-This project uses a modular design, divided by feature as follows:
+This project adopts a modular design, mainly divided into the following modules by feature:
 
 ```
 spring-ai-summary/
@@ -25,65 +44,51 @@ spring-ai-summary/
 │   ├── spring-ai-chat-qwen/          # Qwen integration
 │   ├── spring-ai-chat-doubao/        # Doubao integration
 │   ├── spring-ai-chat-deepseek/      # DeepSeek integration
-│   ├── spring-ai-chat-multi/         # Multi-model parallel
-│   └── spring-ai-chat-multi-openai/  # OpenAI multi-model parallel
+│   ├── spring-ai-chat-multi/         # Multi chat model
+│   │   spring-ai-chat-ollama/        # Ollama integration
+│   └── spring-ai-chat-multi-openai/  # Multi OpenAI protocol models
 ├── spring-ai-rag/                    # RAG (Retrieval Augmented Generation)
-├── spring-ai-embedding/              # Text embedding service
+├── spring-ai-vector/                 # Text embedding service
+│   ├── spring-ai-vector-milvus/      # Milvus vector storage
+│   ├── spring-ai-vector-redis/       # Redis vector storage
 ├── spring-ai-tool-calling/           # Tool/function calling examples
 ├── spring-ai-chat-memory/            # Chat memory management
+│   ├── spring-ai-chat-memory-jdbc    # JDBC-based storage
+│   ├── spring-ai-chat-memory-local   # In-memory storage
 ├── spring-ai-evaluation/             # AI answer evaluation
 └── spring-ai-mcp/                    # MCP examples
+    ├── spring-ai-mcp-server          # MCP server
+    ├── spring-ai-mcp-client          # MCP client
+└── spring-ai-agent/                  # Agent examples
 ```
-
-**The documentation list for different project modules is as follows.：**
-
-* **spring-ai-chat-chat module**
-   * [spring-ai-chat-openai](spring-ai-chat/spring-ai-chat-openai/README.md) - OpenAI Model access
-   * [spring-ai-chat-qwen](spring-ai-chat/spring-ai-chat-qwen/README.md) - Qwen Model access
-   * [spring-ai-chat-doubao](spring-ai-chat/spring-ai-chat-doubao/README.md) - Doubao Model access
-   * [spring-ai-chat-deepseek](spring-ai-chat/spring-ai-chat-deepseek/README.md) - DeepSeek Model access
-   * [spring-ai-chat-multi](spring-ai-chat/spring-ai-chat-multi/README.md) - multi chat Model access
-   * [spring-ai-chat-multi-openai](spring-ai-chat/spring-ai-chat-multi-openai/README.md) - multi OpenAI protocol Model access
-* **[spring-ai-embedding-文本向量化服务]()** --to be added
-* **[spring-ai-rag-RAG 检索增强生成]()** --to be added
-* **[spring-ai-tool-calling-工具函数调用示例]()** --to be added
-* **[spring-ai-chat-memory-会话记忆管理]()** --to be added
-* **[spring-ai-mcp-MCP 示例]()** --to be added
-* **[spring-ai-evaluation-AI 回答评估]()** --to be added
-* 
-## 🧩 Core Features
-
-This sample project implements the following core features:
-
-- **Multi-model support**: Integrates OpenAI, Qwen, Doubao, DeepSeek, and more LLMs
-- **RAG implementation**: Complete retrieval-augmented generation, supporting document embedding and semantic search
-- **Function Calling**: Supports function calling and tool integration
-- **Chat Memory**: Multiple storage options for chat history
-- **Evaluation System**: AI answer quality evaluation tools
-- **Monitoring & Stats**: Token usage and performance monitoring
-
-You can quickly get started by following the steps below.
 
 ## 🚀 Quick Start
 
 ### ⚙️ Requirements
 
-- SpringBoot 3.3.6
-- Spring AI 1.0.0
-- JDK 21+
-- Maven 3.6+
-- Docker (for running Milvus)
+| Dependency     | Version/Requirement | Note                |
+| -------------- | ------------------ | ------------------- |
+| SpringBoot     | 3.3.6              |                     |
+| Spring AI      | 1.0.0              |                     |
+| JDK            | 21+                |                     |
+| Maven          | 3.6+               |                     |
+| Docker         | (for running Milvus)|                     |
 
 ### 1. 🧬 Clone the Project
 
 ```bash
-git clone https://github.com/glmapper/spring-ai-summary.git
-cd spring-ai-summary
+# Clone the project
+git clone https://github.com/java-ai-tech/spring-ai-summary.git
+# Enter the project directory and compile
+cd spring-ai-summary && mvn clean compile -DskipTests
 ```
+
+> If you encounter slow Maven dependency downloads, try using a domestic Maven mirror (e.g., Aliyun, Tsinghua). For any other issues, feel free to join the WeChat group above for discussion and support.
 
 ### 2. 🛠️ Configure Environment Variables
 
 For each module, configure the required API keys in the `application.yml`/`application.properties` file under the `resources` folder. For example, in **spring-ai-chat-deepseek**:
+
 ```properties
 # because we do not use the OpenAI protocol
 spring.ai.deepseek.api-key=${spring.ai.deepseek.api-key}
@@ -91,35 +96,27 @@ spring.ai.deepseek.base-url=https://api.deepseek.com
 spring.ai.deepseek.chat.completions-path=/v1/chat/completions
 spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
-Replace `spring.ai.deepseek.api-key` with your actual API key to start the service.
+Replace `spring.ai.deepseek.api-key` with your actual API key to start the service. For how to apply for an API key, see the project [Wiki page](https://github.com/java-ai-tech/spring-ai-summary/wiki).
 
-### 3. 🗄️ Start Milvus
-
-Milvus is an open-source vector database for storing and retrieving high-dimensional vector data. This project uses Docker to run Milvus, but you can use other installation methods or an existing Milvus service.
-
-> PS: If you do not use the spring-ai-rag or spring-ai-embedding modules, you can skip this step.
-
-The project uses Milvus version 2.5.0. See the [Install Milvus in Docker](https://milvus.io/docs/install_standalone-docker.md) guide.
-
-⚠️ On Mac Air M2, there may be issues with the `milvus-standalone` image when using the official docker-compose file.
-
-### 4. ▶️ Run Examples
+### 3. ▶️ Run Examples
 
 After the above steps, you can run different modules to experience Spring AI features. For example, to start **spring-ai-chat-deepseek** (port may vary):
+
 ```bash
 2025-06-04T14:18:43.939+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [           main] c.g.ai.chat.deepseek.DsChatApplication   : Starting DsChatApplication using Java 21.0.2 with PID 88446 (/Users/glmapper/Documents/projects/glmapper/spring-ai-summary/spring-ai-chat/spring-ai-chat-deepseek/target/classes started by glmapper in /Users/glmapper/Documents/projects/glmapper/spring-ai-summary)
 ...
 ```
-Once started, you can test with HTTPie or Postman:
+Once started, you can test with cUrl, HTTPie, or Postman:
+
 ```bash
-GET /api/deepseek/chatWithMetric?userInput="Who are you?" HTTP/1.1
-Host: localhost:8081
-User-Agent: HTTPie
+curl localhost:8081/api/deepseek/chatWithMetric?userInput="Who are you?"
 ```
 Result:
+
 ![chat-ds-metrics.png](docs/statics/chat-ds-metrics.png)
 
 You can also check token usage:
+
 ```bash
 # completion tokens
 http://localhost:8081/actuator/metrics/ai.completion.tokens
@@ -142,38 +139,36 @@ Example response for `ai.completion.tokens`:
 }
 ```
 
-## 📚 Module Overview
+**For usage and configuration of other modules, see the [Wiki page](https://github.com/java-ai-tech/spring-ai-summary/wiki) or each module's `README.md`.**
 
-### 1. 💬 Chat Module (spring-ai-chat)
+## 📚 Learning Resources (Continuously Updated)
 
-Provides integration with multiple LLMs:
-- Single-model chat: OpenAI, Qwen, Doubao, DeepSeek, etc.
-- Multi-model parallel: Call multiple models and compare results
-- Prompt templates: Customizable prompt templates and variable replacement
-- Token stats: Input/output token statistics and cost estimation
+Here are some recommended learning resources:
 
-### 2. 📖 RAG Module (spring-ai-rag)
+> The official [Awesome Spring AI](https://github.com/spring-ai-community/awesome-spring-ai) list is also available, but it mainly collects overseas resources. This project focuses on aggregating domestic learning resources for your reference.
 
-Implements retrieval-augmented generation:
-- Document embedding: Supports various document formats
-- Vector storage: Efficient storage and retrieval with Milvus
-- Semantic search: Similarity and hybrid search
-- Answer generation: Generate accurate answers based on retrieval
+#### Technical Community
 
-### 3. 🛠️ Tool Calling Module (spring-ai-tool-calling)
+- [Spring AI Official Documentation](https://spring.io/projects/spring-ai)
+- [Spring AI Alibaba Official Documentation](https://github.com/alibaba/spring-ai-alibaba)
 
-Demonstrates tool/function calling:
-- Function definition: Use @Tool annotation to define tools
-- Tool registration: Dynamic registration and configuration
-- Dynamic invocation: Call tools at runtime
-- Result handling: Format and process tool results
+#### Project Series
+- [MindMark: A RAG system based on SpringAI](https://gitee.com/mumu-osc/mind-mark)
+- [My AI Agent: An intelligent agent service based on Spring Boot and Spring AI](https://github.com/Cunninger/my-ai-agent)
 
-### 4. 🧠 Chat Memory Module (spring-ai-chat-memory)
+#### Blog Series
+- [MaJiang's Spring AI Series](https://cloud.tencent.com/developer/column/72423) (Chinese, some content may be outdated)
+- [In-depth Spring AI Series](https://www.cnblogs.com/guoxiaoyu/p/18666904) (Chinese, discontinued)
+- [How to Build MCP Client-Server Architecture with Spring AI](https://spring.didispace.com/article/spring-ai-mcp.html)
+- [Building Effective Agents with Spring AI](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns)
+- [Spring AI Large Model Output Formatting and Simple Usage](https://juejin.cn/post/7378696051082199080)
+- [Spring AI EmbeddingModel Concept and Source Code Analysis](https://my.oschina.net/u/2391658/blog/18534829)
 
-Provides chat history management:
-- JDBC persistence: Store chat history in a database
-- Local file storage: Store chat history in the file system
-- Context management: Manage and clean up chat context
+#### Video Series
+- [How to Build Agents with Spring AI (YouTube)](https://www.youtube.com/watch?v=d7m6nJxfi0g)
+- [Spring AI Video Tutorials (YouTube)](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
+
+If you have good articles or resources, feel free to submit a PR or Issue to supplement and improve this list. See below for development and contribution guidelines.
 
 ## 🔧 Development Guide
 
@@ -189,6 +184,7 @@ Provides chat history management:
 
 2. **Create a feature branch**
    ```bash
+   # Create and switch to a new feature branch
    git checkout -b feature/your-feature-name
    ```
 
@@ -211,26 +207,6 @@ Provides chat history management:
    - Describe your changes and reasons
    - Wait for review and merge
 
-### Development Environment Setup
-1. **IDE Setup**
-   - Recommend IntelliJ IDEA
-   - Install Lombok plugin
-   - Configure Java 21 SDK
-2. **Maven Setup**
-   ```xml
-   <properties>
-       <java.version>21</java.version>
-       <spring-ai.version>1.0.0</spring-ai.version>
-   </properties>
-   ```
-3. **Run Tests**
-   ```bash
-   # Run all tests
-   mvn test
-   # Run tests for a specific module
-   mvn test -pl spring-ai-chat
-   ```
-
 ## 📝 Notes
 
 1. **API Key Security**
@@ -238,12 +214,7 @@ Provides chat history management:
    - Never hardcode keys in the codebase
    - Rotate keys regularly for better security
 
-2. **Milvus Usage**
-   - Ensure vector dimension matches the embedding model when creating collections
-   - Load the collection before retrieval (load collection)
-   - Create indexes before retrieval for better performance
-
-3. **Token Usage**
+2. **Token Usage**
    - Monitor token consumption to avoid overuse
    - Set reasonable token limits to prevent abuse
    - Implement caching to improve response speed and cost control
@@ -264,3 +235,5 @@ Provides chat history management:
 - [Qwen](https://qianwen.aliyun.com) - Qwen series models
 - [Doubao](https://www.volcengine.com/docs/82379) - Doubao series models
 - [Milvus](https://milvus.io) - Vector database support
+
+This project is fully open source, aiming to aggregate more high-quality Spring AI learning resources. Most resources are collected from the internet. If there is any infringement, please contact for removal. Special thanks to all open source contributors and everyone who shares technology in the community!
