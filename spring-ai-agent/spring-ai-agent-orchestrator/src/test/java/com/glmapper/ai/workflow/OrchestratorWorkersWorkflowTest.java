@@ -18,6 +18,7 @@ public class OrchestratorWorkersWorkflowTest {
     @Test
     public void test() {
         WorkflowResponse response = orchestratorWorkersWorkflow.process("Generate both technical and user-friendly documentation for a REST API endpoint");
+        // 执行结果见 resources/test_result.md
         System.out.println("Analysis: " + response.getAnalysis());
         System.out.println("Worker Outputs: " + response.getWorkerResponses());
     }
