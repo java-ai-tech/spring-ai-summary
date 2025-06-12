@@ -7,13 +7,13 @@
   <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
 </p>
 
-🚀🚀🚀 本项目是一个 Spring AI 快速入门的样例工程项目，旨在通过一些小的案例展示 Spring AI 框架的核心功能和使用方法。
-项目采用模块化设计，每个模块都专注于特定的功能领域，便于学习和扩展；欢迎加群交流！
+🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的一系列样例工程项目，通过这些案例展示 Spring AI 框架的核心功能和使用方法，可以帮助对 Spring AI 框架感兴趣的开发者快速上手和理解其核心概念。
+项目采用模块化设计，每个模块都专注于特定的功能领域，如聊天、RAG（检索增强生成）、文本向量化、工具函数调用、会话记忆管理等；每个模块都提供了详细的文档和示例代码。
+此外，Spring AI Summary 会持续关注 Spring AI 的最新动态和版本更新，及时更新示例代码和文档；并将一些优质的技术文章和实践经验同步到项目中，帮助开发者更好地理解和应用 Spring AI 框架。
 
 <p align="center">
   <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
 </p>
-
 
 ## 📖 关于 Spring AI
 
@@ -31,65 +31,50 @@ spring-ai-summary/
 │   ├── spring-ai-chat-doubao/        # 豆包模型接入
 │   ├── spring-ai-chat-deepseek/      # DeepSeek 模型接入
 │   ├── spring-ai-chat-multi/         # 多 chat 模型调用
+│   │   spring-ai-chat-ollama/        # 接入 ollma
 │   └── spring-ai-chat-multi-openai/  # 多 OpenAI 协议模型调用
 ├── spring-ai-rag/                    # RAG 检索增强生成
-├── spring-ai-embedding/              # 文本向量化服务
+├── spring-ai-vector/                 # 文本向量化服务
+    |── spring-ai-vector-milvus/      # Milvus 向量存储
+    ├── spring-ai-vector-redis/       # redis 向量存储
 ├── spring-ai-tool-calling/           # 工具函数调用示例
 ├── spring-ai-chat-memory/            # 会话记忆管理
+    ├── spring-ai-chat-memory-jdbc    # 基于 jdbc 实现存储
+    ├── spring-ai-chat-memory-local   # 基于 内存 实现存储
 ├── spring-ai-evaluation/             # AI 回答评估
 └── spring-ai-mcp/                    # MCP 示例
+    ├── spring-ai-mcp-server          # MCP 服务器
+    ├── spring-ai-mcp-client          # MCP 客户端
+└── spring-ai-agent/                  # agent 示例
 ```
-
-**不同工程模块的文档列表如下：**
-
-* **spring-ai-chat-聊天模块**
-  * [spring-ai-chat-openai](spring-ai-chat/spring-ai-chat-openai/README.md) - OpenAI 模型接入
-  * [spring-ai-chat-qwen](spring-ai-chat/spring-ai-chat-qwen/README.md) - 通义千问模型接入
-  * [spring-ai-chat-doubao](spring-ai-chat/spring-ai-chat-doubao/README.md) - 豆包模型接入
-  * [spring-ai-chat-deepseek](spring-ai-chat/spring-ai-chat-deepseek/README.md) - DeepSeek 模型接入
-  * [spring-ai-chat-multi](spring-ai-chat/spring-ai-chat-multi/README.md) - 多 chat 模型接入
-  * [spring-ai-chat-multi-openai](spring-ai-chat/spring-ai-chat-multi-openai/README.md) - 多 OpenAI 协议模型接入
-* **[spring-ai-embedding-文本向量化服务]()** --待补充
-* **[spring-ai-rag-RAG 检索增强生成]()** --待补充
-* **[spring-ai-tool-calling-工具函数调用示例]()** --待补充
-* **[spring-ai-chat-memory-会话记忆管理]()** --待补充
-* **[spring-ai-mcp-MCP 示例]()** --待补充
-* **[spring-ai-evaluation-AI 回答评估]()** --待补充
-
-## 🧩 核心功能实现
-
-本案例工程的核心功能实现包括：
-
-- **多模型支持**：集成 OpenAI、通义千问、豆包、DeepSeek 等多种 LLM 模型
-- **RAG 实现**：完整的检索增强生成实现，支持文档向量化和语义搜索
-- **Function Calling**：支持函数调用（Function Calling）和工具集成
-- **Chat Memory**：支持多种存储方式的会话历史管理
-- **评估系统**：AI 回答质量评估工具
-- **监控统计**：Token 使用量统计和性能监控
-
-下面你可以通过快速开始部分来快速运行项目。
-
 
 ## 🚀 快速开始
 
 ### ⚙️ 环境要求
 
-- SpringBoot 3.3.6
-- Spring AI 1.0.0
-- JDK 21+
-- Maven 3.6+
-- Docker（用于运行 Milvus）
+| 依赖项         | 版本/要求         | 说明                |
+| -------------- | ---------------- | ------------------- |
+| SpringBoot     | 3.3.6            |                     |
+| Spring AI      | 1.0.0            |                     |
+| JDK            | 21+              |                     |
+| Maven          | 3.6+             |                     |
+| Docker         | （用于运行 Milvus） |                     |
 
 ### 1. 🧬 克隆项目
 
 ```bash
-git clone https://github.com/glmapper/spring-ai-summary.git
-cd spring-ai-summary
+# 克隆项目到本地
+git clone https://github.com/java-ai-tech/spring-ai-summary.git
+# 进入项目目录并且 compile 项目
+cd spring-ai-summary && mvn clean compile -DskipTests
 ```
+
+> 如果遇到 Maven 依赖下载慢的问题，可以尝试使用国内的 Maven 镜像源，如阿里云、清华大学等；运行过程中如果有其他任何问题，可以扫码加入上面的微信群进行咨询交流～～～
 
 ### 2. 🛠️ 配置环境变量
 
 对于每个模块的 resource 文件夹下的 `application.yml`/`application.properties` 文件，根据你的需求配置相应的 API 密钥。如 **spring-ai-chat-deepseek** 模块：
+
 ```properties
 # because we do not use the OpenAI protocol
 spring.ai.deepseek.api-key=${spring.ai.deepseek.api-key}
@@ -97,19 +82,9 @@ spring.ai.deepseek.base-url=https://api.deepseek.com
 spring.ai.deepseek.chat.completions-path=/v1/chat/completions
 spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
-将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。
+将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 Wiki 页面进行查看。
 
-### 3. 🗄️ 启动 Milvus
-
-Milvus 是一个开源的向量数据库，用于存储和检索高维向量数据。本项目是使用 Docker 来运行 Milvus，当然你也可以选择其他方式安装 Milvus或者使用已经部署好的 Milvus 服务。
-
-> PS: 如果你不运行 spring-ai-rag 模块和 spring-ai-embedding 模块，可以跳过此步骤。
-
-这个项目使用的 milvus 版本是 2.5.0 版本，安装方式见：[Install Milvus in Docker](https://milvus.io/docs/install_standalone-docker.md)。
-
-⚠️本人的电脑是 Mac Air M2 芯片，使用官方文档中的 docker-compose 文件启动 Milvus 时，遇到 `milvus-standalone` 镜像不匹配问题。
-
-### 4. ▶️ 运行示例
+### 3. ▶️ 运行示例
 
 完成上述步骤后，你可以选择运行不同的示例模块来体验 Spring AI 的功能。如启动运行 **spring-ai-chat-deepseek** 模块（具体端口可以根据你自己的配置而定）：
 ```bash
@@ -127,16 +102,17 @@ Milvus 是一个开源的向量数据库，用于存储和检索高维向量数�
 2025-06-04T14:18:45.175+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-06-04T14:18:45.176+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 ```
-启动完成后，可以通过 HTTPie 或 Postman 等工具进行测试。
+启动完成后，可以通过 cUrl、HTTPie 或 Postman 等工具进行测试。
+
 ```bash
-GET /api/deepseek/chatWithMetric?userInput="你是谁" HTTP/1.1
-Host: localhost:8081
-User-Agent: HTTPie
+curl localhost:8081/api/deepseek/chatWithMetric?userInput="你是谁?"
 ```
 结果如下：
+
 ![chat-ds-metrics.png](docs/statics/chat-ds-metrics.png)
 
 你可以继续使用下面的请求来查看 Token 使用情况：
+
 ```bash
 # completion tokens
 http://localhost:8081/actuator/metrics/ai.completion.tokens
@@ -159,38 +135,36 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 }
 ```
 
-## 📚 模块说明
+**关于其他模块的使用方法和配置，可以查看 Wiki 页面或各模块的 `README.md` 文件。**
 
-### 1. 💬 聊天模块 (spring-ai-chat)
+## 📚 学习资料(持续更新中)
 
-提供多种 LLM 模型的接入实现，支持：
-- 单模型对话：支持 OpenAI、通义千问、豆包、DeepSeek 等模型
-- 多模型并行调用：支持多个模型同时调用，结果对比
-- 提示词模板：支持自定义提示词模板和变量替换
-- Token 统计：支持输入输出 Token 统计和成本估算
+以下是一些推荐的学习资源：
 
-### 2. 📖 RAG 模块 (spring-ai-rag)
+> 官方也有一个[学习资料汇总](https://github.com/spring-ai-community/awesome-spring-ai)，但主要是汇总的国外的一些资料，所以本项目更聚焦在汇总了一些国内的学习资源，供大家参考。
 
-实现检索增强生成，包含：
-- 文档向量化：支持多种文档格式的向量化处理
-- 向量存储：使用 Milvus 进行高效的向量存储和检索
-- 语义检索：支持相似度搜索和混合检索
-- 问答生成：基于检索结果生成准确的回答
+#### 技术社区
 
-### 3. 🛠️ 工具调用模块 (spring-ai-tool-calling)
+- [Spring AI 官方文档](https://spring.io/projects/spring-ai)
+- [Spring AI Alibaba 官方文档](https://github.com/alibaba/spring-ai-alibaba)
 
-展示如何实现工具函数调用：
-- 函数定义：使用 @Tool 注解定义工具函数
-- 工具注册：支持动态注册和配置工具
-- 动态调用：支持运行时动态调用工具
-- 结果处理：支持工具调用结果的格式化和处理
+#### 项目系列
+- [MindMark（心印）是一款基于 SpringAI 的 RAG 系统](https://gitee.com/mumu-osc/mind-mark)
+- [My AI Agent 是一个基于 Spring Boot 和 Spring AI 框架构建的智能代理服务](https://github.com/Cunninger/my-ai-agent)
 
-### 4. 🧠 会话记忆模块 (spring-ai-chat-memory)
+#### 博客系列
+- [码匠的流水账--Spring AI  系列专栏](https://cloud.tencent.com/developer/column/72423) 因为作者没有进行专栏管理，所以是链接到了主页；此外这个系列的文章用来学习 Spring AI 的一些设计思路和实现方式非常不错，但是他是基于 M 系列版本写作的，所以有些内容可能会和最新版本不一致。
+- [深入解析 Spring AI 系列](https://www.cnblogs.com/guoxiaoyu/p/18666904) 作者貌似停更了...
+- [如何用Spring AI构建MCP Client-Server架构](https://spring.didispace.com/article/spring-ai-mcp.html)
+- [Building Effective Agents with Spring AI](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns) 强烈建议学习下
+- [Spring AI 大模型返回内容格式化源码分析及简单使用](https://juejin.cn/post/7378696051082199080)
+- [Spring AI EmbeddingModel 概念与源码分析](https://my.oschina.net/u/2391658/blog/18534829)
 
-提供会话历史管理：
-- JDBC 持久化：支持数据库存储会话历史
-- 本地文件存储：支持文件系统存储会话历史
-- 会话上下文管理：支持会话上下文的管理和清理
+#### 视频系列
+- [How to Build Agents with Spring AI](https://www.youtube.com/watch?v=d7m6nJxfi0g)
+- [Spring AI 系列视频教程](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
+
+大家如果有好的文章或资源，也欢迎提交 PR 或 Issue 进行补充和完善。下面开发和贡献指南。
 
 ## 🔧 开发指南
 
@@ -232,26 +206,6 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
    - 填写 PR 描述，说明改动内容和原因
    - 等待代码审查和合并
 
-### 开发环境设置
-1. **IDE 配置**
-   - 推荐使用 IntelliJ IDEA
-   - 安装 Lombok 插件
-   - 配置 Java 21 SDK
-2. **Maven 配置**
-   ```xml
-   <properties>
-       <java.version>21</java.version>
-       <spring-ai.version>1.0.0</spring-ai.version>
-   </properties>
-   ```
-3. **运行测试**
-   ```bash
-   # 运行所有测试
-   mvn test
-   # 运行特定模块的测试
-   mvn test -pl spring-ai-chat
-   ```
-
 ## 📝 注意事项
 
 1. **API 密钥安全**
@@ -259,12 +213,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
    - 切勿在代码仓库中硬编码密钥
    - 定期轮换密钥，提升安全性
 
-2. **Milvus 使用**
-   - 创建集合时需确保向量维度与 embedding 模型一致
-   - 检索前需先加载集合（load collection）
-   - 创建索引后再进行检索，提升性能
-
-3. **Token 使用**
+2. **Token 使用**
    - 持续监控 Token 消耗，避免超额
    - 设置合理的 Token 限制，防止滥用
    - 推荐实现缓存机制，提升响应速度与成本控制
@@ -285,3 +234,5 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - [通义千问](https://qianwen.aliyun.com) - 提供 Qwen 系列模型
 - [豆包](https://www.volcengine.com/docs/82379) - 提供豆包系列模型
 - [Milvus](https://milvus.io) - 提供向量数据库支持
+
+本项目是一个完全开源项目，主要目的是汇聚更多优质的 Spring AI 相关的学习资源，当然**相关学习资源主要来源于网络，如有侵权，请联系删除！！！**；在此也对参与开源贡献和所有在技术社区分享技术的朋友们表示衷心的感谢！
