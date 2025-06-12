@@ -1,10 +1,15 @@
 
+## Spring AI Summary
+
+![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
+
+
 <p align="left">
-  <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
-  <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
+  <a href="README.md" target="_blank"><img src="https://img.shields.io/badge/lang-中文-red?logo=googletranslate" alt="中文" style="vertical-align:middle; margin-right:4px;"/></a>
+  <a href="README_EN.md" target="_blank"><img src="https://img.shields.io/badge/lang-English-blue?logo=googletranslate" alt="English" style="vertical-align:middle; margin-right:4px;"/></a>
+  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
 </p>
 
-## Spring AI Summary ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
 
 🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的样例工程集合，旨在帮助开发者快速掌握 Spring AI 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，帮助开发者轻松上手并深入理解框架的核心概念。
 
@@ -94,7 +99,7 @@ spring.ai.deepseek.base-url=https://api.deepseek.com
 spring.ai.deepseek.chat.completions-path=/v1/chat/completions
 spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
-将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 Wiki 页面进行查看。
+将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 [Wiki 页面](https://github.com/java-ai-tech/spring-ai-summary/wiki)进行查看。
 
 ### 3. ▶️ 运行示例
 
@@ -147,7 +152,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 }
 ```
 
-**关于其他模块的使用方法和配置，可以查看 Wiki 页面或各模块的 `README.md` 文件。**
+**关于其他模块的使用方法和配置，可以查看 [Wiki 页面](https://github.com/java-ai-tech/spring-ai-summary/wiki)或各模块的 `README.md` 文件。**
 
 ## 📚 学习资料(持续更新中)
 
