@@ -1,4 +1,4 @@
-# spring-ai-vector-redis 
+## spring-ai-vector-redis 
 
 该工程模块主要是集成 Redis 的向量存储功能，提供了一个使用 Redis 存储向量并执行相似性搜索的简单示例。
 
