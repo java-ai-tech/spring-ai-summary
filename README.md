@@ -1,4 +1,3 @@
-# Spring AI Summary
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
 
@@ -7,17 +6,32 @@
   <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
 </p>
 
-🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的一系列样例工程项目，通过这些案例展示 Spring AI 框架的核心功能和使用方法，可以帮助对 Spring AI 框架感兴趣的开发者快速上手和理解其核心概念。
-项目采用模块化设计，每个模块都专注于特定的功能领域，如聊天、RAG（检索增强生成）、文本向量化、工具函数调用、会话记忆管理等；每个模块都提供了详细的文档和示例代码。
-此外，Spring AI Summary 会持续关注 Spring AI 的最新动态和版本更新，及时更新示例代码和文档；并将一些优质的技术文章和实践经验同步到项目中，帮助开发者更好地理解和应用 Spring AI 框架。
+## Spring AI Summary
+
+🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的样例工程集合，旨在帮助开发者快速掌握 Spring AI 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，帮助开发者轻松上手并深入理解框架的核心概念。
+
+### 项目特点
+
+- **模块化设计**：每个模块聚焦于一个功能领域，例如聊天、RAG（检索增强生成）、文本向量化、工具函数调用、会话记忆管理等，方便开发者按需学习和应用。
+- **实用示例**：每个模块都包含完整的示例代码和文档，展示 Spring AI 的实际应用场景，帮助开发者快速构建自己的 AI 应用。
+- **持续更新**：紧跟 Spring AI 的最新动态和版本更新，及时优化示例代码和文档，确保内容始终与框架保持同步。
+- **社区支持**：同步优质技术文章和实践经验，分享最佳实践，帮助开发者更好地理解和应用 Spring AI。
+
+### 适合人群
+
+Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初学者还是有经验的工程师，都可以通过本项目快速了解框架的核心功能，并将其应用到实际项目中。
+
+通过 Spring AI Summary，您可以：
+
+- 掌握 Spring AI 的核心概念和功能。
+- 学习如何构建高效的 AI 应用。
+- 获取最新的技术动态和实践经验。
+
+欢迎您加入社区，共同探索 Spring AI 的无限可能！
 
 <p align="center">
   <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
 </p>
-
-## 📖 关于 Spring AI
-
-Spring AI 项目的目标是简化集成人工智能功能的应用程序的开发过程，避免引入不必要的复杂性。关于 Spring AI 的更多信息，请访问 [Spring AI 官方文档](https://spring.io/projects/spring-ai)。
 
 ## 🗂️ 项目结构
 
