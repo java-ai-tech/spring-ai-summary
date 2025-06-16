@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: redis-vector-store
+    name: mariadb-vector-store
   datasource:
     url: ${BASE_HOST}
     username:  ${BASE_NAME}

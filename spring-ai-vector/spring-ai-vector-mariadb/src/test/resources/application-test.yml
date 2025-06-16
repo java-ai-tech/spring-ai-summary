@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: redis-vector-store
+    name: mariadb-vector-store
   datasource:
     url: jdbc:mariadb://localhost:3308/vector_test
     username: root
