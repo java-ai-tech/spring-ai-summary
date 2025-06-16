@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.glmapper</groupId>
+    <artifactId>spring-ai-vector</artifactId>
+    <version>0.0.1</version>
+  </parent>
+
+  <artifactId>spring-ai-vector-mariadb</artifactId>
+  <packaging>jar</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.ai</groupId>
+      <artifactId>spring-ai-starter-vector-store-mariadb</artifactId>
+    <exclusions>
+      <exclusion>
+        <groupId>org.mariadb.jdbc</groupId>
+        <artifactId>mariadb-java-client</artifactId>
+      </exclusion>
+    </exclusions>
+    </dependency>
+    <!-- 3.3版本缺少enquoteIdentifier方法,  springAI 自动调用失败,引入最新版本client -->
+    <dependency>
+      <groupId>org.mariadb.jdbc</groupId>
+      <artifactId>mariadb-java-client</artifactId>
+      <version>3.5.2</version>
+    </dependency>
+  </dependencies>
+</project>

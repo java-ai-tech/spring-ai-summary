@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mariadb-vector-store
+  datasource:
+    url: jdbc:mariadb://localhost:3308/vector_test
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  ai:
+    vectorstore:
+      mariadb:
+        # 启用模式初始化
+        initialize-schema: false
+        # 设置距离计算类型为余弦相似度
+        distance-type: COSINE
+        # 定义向量维度为1536
+        dimensions: 1536
+    openai:
+      api-key: ${API_KEY}
+      embedding:
+        # doc reference: https://bailian.console.aliyun.com/?switchAgent=12095181&productCode=p_efm&switchUserType=3&tab=api#/api/?type=model&url=https%3A%2F%2Fhelp.aliyun.com%2Fdocument_detail%2F2712515.html&renderType=iframe
+        base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+        embeddings-path: /embeddings
+        options:
+          model: text-embedding-v4

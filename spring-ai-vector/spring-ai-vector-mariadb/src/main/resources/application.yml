@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mariadb-vector-store
+  datasource:
+    url: ${BASE_HOST}
+    username:  ${BASE_NAME}
+    password:  ${BASE_PWD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  ai:
+    vectorstore:
+      mariadb:
+        # 启用模式初始化
+        initialize-schema: true
+        # 设置距离计算类型为余弦相似度
+        distance-type: COSINE
+        # 定义向量维度为1536
+        dimensions: 1536
+    openai:
+      api-key: ${API_KEY}
+      embedding:
+        base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+        embeddings-path: /embeddings
+        options:
+          model: text-embedding-v4
