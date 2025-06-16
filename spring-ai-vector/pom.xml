@@ -13,6 +13,7 @@
     <modules>
         <module>spring-ai-vector-milvus</module>
         <module>spring-ai-vector-redis</module>
+        <module>spring-ai-vector-mariadb</module>
     </modules>
 
     <dependencies>
