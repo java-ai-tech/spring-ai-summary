@@ -254,3 +254,8 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - [Milvus](https://milvus.io) - 提供向量数据库支持
 
 本项目是一个完全开源项目，主要目的是汇聚更多优质的 Spring AI 相关的学习资源，当然**相关学习资源主要来源于网络，如有侵权，请联系删除！！！**；在此也对参与开源贡献和所有在技术社区分享技术的朋友们表示衷心的感谢！
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=java-ai-tech/spring-ai-summary&type=Date)](https://www.star-history.com/#java-ai-tech/spring-ai-summary&Date)

@@ -237,3 +237,8 @@ If you have good articles or resources, feel free to submit a PR or Issue to sup
 - [Milvus](https://milvus.io) - Vector database support
 
 This project is fully open source, aiming to aggregate more high-quality Spring AI learning resources. Most resources are collected from the internet. If there is any infringement, please contact for removal. Special thanks to all open source contributors and everyone who shares technology in the community!
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=java-ai-tech/spring-ai-summary&type=Date)](https://www.star-history.com/#java-ai-tech/spring-ai-summary&Date)
