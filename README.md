@@ -30,10 +30,10 @@ Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初
 - 学习如何构建高效的 AI 应用。
 - 获取最新的技术动态和实践经验。
 
-欢迎您加入社区，共同探索 Spring AI 的无限可能！
+欢迎您加入社区，共同探索 Spring AI 的无限可能 (因群二维码有过期时间限制，请加群主二维码邀请进群，备注 Spring AI)！
 
 <p align="center">
-  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+  <img width="189" alt="image" src="docs/statics/my_chat.png" />
 </p>
 
 ## 🗂️ 项目结构
