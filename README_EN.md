@@ -30,7 +30,7 @@ With Spring AI Summary, you can:
 Welcome to join the community and explore the infinite possibilities of Spring AI together!
 
 <p align="center">
-  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+  <img width="189" alt="image" src="docs/statics/my_chat.png" />
 </p>
 
 ## 🗂️ Project Structure
