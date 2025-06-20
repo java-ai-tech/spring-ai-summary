@@ -2,13 +2,14 @@
 ## Spring AI Summary
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
-
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary)
 
 <p align="left">
   <a href="README.md" target="_blank"><img src="https://img.shields.io/badge/lang-中文-red?logo=googletranslate" alt="中文" style="vertical-align:middle; margin-right:4px;"/></a>
   <a href="README_EN.md" target="_blank"><img src="https://img.shields.io/badge/lang-English-blue?logo=googletranslate" alt="English" style="vertical-align:middle; margin-right:4px;"/></a>
   <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
 </p>
+
 
 
 🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的样例工程集合，旨在帮助开发者快速掌握 Spring AI 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，帮助开发者轻松上手并深入理解框架的核心概念。
