@@ -169,6 +169,7 @@ Here are some recommended learning resources:
 #### Video Series
 - [How to Build Agents with Spring AI (YouTube)](https://www.youtube.com/watch?v=d7m6nJxfi0g)
 - [Spring AI Video Tutorials (YouTube)](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
+- [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
 
 If you have good articles or resources, feel free to submit a PR or Issue to supplement and improve this list. See below for development and contribution guidelines.
 

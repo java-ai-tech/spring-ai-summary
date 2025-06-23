@@ -183,7 +183,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 #### 视频系列
 - [How to Build Agents with Spring AI](https://www.youtube.com/watch?v=d7m6nJxfi0g)
 - [Spring AI 系列视频教程](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
-
+- [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
 大家如果有好的文章或资源，也欢迎提交 PR 或 Issue 进行补充和完善。下面开发和贡献指南。
 
 ## 🔧 开发指南
