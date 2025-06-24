@@ -27,20 +27,10 @@ public class ImageController {
     }
 
     @GetMapping
-    public void image(HttpServletResponse response) {
+    public String image() {
 
         ImageResponse imageResponse = imageModel.call(new ImagePrompt(DEFAULT_PROMPT));
-        String imageUrl = imageResponse.getResult().getOutput().getUrl();
 
-        try {
-            URL url = URI.create(imageUrl).toURL();
-            InputStream in = url.openStream();
-
-            response.setHeader("Content-Type", MediaType.IMAGE_PNG_VALUE);
-            response.getOutputStream().write(in.readAllBytes());
-            response.getOutputStream().flush();
-        } catch (IOException e) {
-            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        }
+        return imageResponse.getResult().getOutput().getUrl();
     }
 }
