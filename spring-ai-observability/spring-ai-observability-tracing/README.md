@@ -64,7 +64,7 @@ docker-compose up -d
 
 ### 2. 修改配置
 
-在 [application.yml](file:///Users/mrliu/githubWorkspace/spring-ai-summary/spring-ai-mcp/mcp-server-weather/target/classes/application.yml) 中更新以下参数：
+在 [application.yml](src/main/resources) 中更新以下参数：
 
 ```yaml
 spring:
