@@ -22,6 +22,7 @@
         <module>spring-ai-chat-memory</module>
         <module>spring-ai-tool-calling</module>
         <module>spring-ai-agent</module>
+        <module>spring-ai-observability</module>
     </modules>
 
     <properties>
