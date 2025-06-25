@@ -102,6 +102,11 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
 将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 [Wiki 页面](https://github.com/java-ai-tech/spring-ai-summary/wiki)进行查看。
 
+有一个一劳永逸的办法，将对应的spring.ai.deepseek.api-key添加到对应环境变量中，后续启动时会带进来，不用再去修改代码了对应的application.yml,不用担心提交代码泄露key
+将IDEA启动项中的环境变量添加spring.ai.openai.api-key=sk-***************(你自己对应的 key)，运行项目时，会自动带入环境变量。
+不过对应的子module每个模块都需要配置
+
+
 ### 3. ▶️ 运行示例
 
 完成上述步骤后，你可以选择运行不同的示例模块来体验 Spring AI 的功能。如启动运行 **spring-ai-chat-deepseek** 模块（具体端口可以根据你自己的配置而定）：
