@@ -98,6 +98,11 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
 Replace `spring.ai.deepseek.api-key` with your actual API key to start the service. For how to apply for an API key, see the project [Wiki page](https://github.com/java-ai-tech/spring-ai-summary/wiki).
 
+There's a one-time setup solution: add the spring.ai.deepseek.api-key to your environment variables. This will be automatically loaded during subsequent application startups without needing code modifications in application.yml, eliminating concerns about accidentally committing the code and exposing the key.
+
+In IntelliJ IDEA's launch configuration, add the environment variable spring.ai.openai.api-key=sk-***************(your_actual_key). The project will automatically include this environment variable when running.
+
+Note: Each submodule requires separate configuration for this setting.
 ### 3. ▶️ Run Examples
 
 After the above steps, you can run different modules to experience Spring AI features. For example, to start **spring-ai-chat-deepseek** (port may vary):
