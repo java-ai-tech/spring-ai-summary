@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.glmapper</groupId>
+        <artifactId>spring-ai-summary</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <artifactId>spring-ai-observability</artifactId>
+    <packaging>pom</packaging>
+    <name>spring-ai-observability</name>
+    <modules>
+        <module>spring-ai-observability-metric</module>
+        <module>spring-ai-observability-tracing</module>
+    </modules>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-openai</artifactId>
+        </dependency>
+
+        <!--    redis vector    -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-vector-store-redis</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

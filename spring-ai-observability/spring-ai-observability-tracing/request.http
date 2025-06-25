@@ -1,0 +1,26 @@
+### chat
+GET http://localhost:8088/observability/chat
+
+### embedding
+GET http://localhost:8088/observability/embedding
+
+### embedding generic
+GET http://localhost:8088/observability/embedding/generic
+
+### image
+GET http://localhost:8088/observability/image
+
+### tools function
+GET http://localhost:8088/observability/tools/function
+
+### tools method
+GET http://localhost:8088/observability/tools/method
+
+### vector store
+GET http://localhost:8088/observability/vector/store?text=
+
+### vector search
+GET http://localhost:8088/observability/vector/search?text=
+
+### vector delete
+GET http://localhost:8088/observability/vector/delete?id=
