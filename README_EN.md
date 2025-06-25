@@ -1,12 +1,14 @@
 # Spring AI Summary
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary)
 
 <p align="left">
-  <a href="README.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin-right:10px;">🇨🇳 中文</span></a>
-  <a href="README_EN.md" style="text-decoration:none;"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">🇺🇸 English</span></a>
-  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;">📖 Wiki</span></a>
+  <a href="README.md" target="_blank"><img src="https://img.shields.io/badge/lang-中文-red?logo=googletranslate" alt="中文" style="vertical-align:middle; margin-right:4px;"/></a>
+  <a href="README_EN.md" target="_blank"><img src="https://img.shields.io/badge/lang-English-blue?logo=googletranslate" alt="English" style="vertical-align:middle; margin-right:4px;"/></a>
+  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
 </p>
+
 
 🚀🚀🚀 Spring AI Summary is a collection of sample projects based on native Spring AI, designed to help developers quickly master the core features and usage of the Spring AI framework. With a modular design, each module focuses on a specific functional area, providing clear code examples and detailed documentation to help you get started easily and deeply understand the core concepts of the framework.
 
@@ -30,7 +32,7 @@ With Spring AI Summary, you can:
 Welcome to join the community and explore the infinite possibilities of Spring AI together!
 
 <p align="center">
-  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+  <img width="189" alt="image" src="docs/statics/my_chat.png" />
 </p>
 
 ## 🗂️ Project Structure
@@ -172,6 +174,7 @@ Here are some recommended learning resources:
 #### Video Series
 - [How to Build Agents with Spring AI (YouTube)](https://www.youtube.com/watch?v=d7m6nJxfi0g)
 - [Spring AI Video Tutorials (YouTube)](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
+- [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
 
 If you have good articles or resources, feel free to submit a PR or Issue to supplement and improve this list. See below for development and contribution guidelines.
 

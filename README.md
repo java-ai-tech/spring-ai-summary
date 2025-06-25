@@ -2,13 +2,14 @@
 ## Spring AI Summary
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
-
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary)
 
 <p align="left">
   <a href="README.md" target="_blank"><img src="https://img.shields.io/badge/lang-中文-red?logo=googletranslate" alt="中文" style="vertical-align:middle; margin-right:4px;"/></a>
   <a href="README_EN.md" target="_blank"><img src="https://img.shields.io/badge/lang-English-blue?logo=googletranslate" alt="English" style="vertical-align:middle; margin-right:4px;"/></a>
   <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
 </p>
+
 
 
 🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的样例工程集合，旨在帮助开发者快速掌握 Spring AI 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，帮助开发者轻松上手并深入理解框架的核心概念。
@@ -30,10 +31,10 @@ Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初
 - 学习如何构建高效的 AI 应用。
 - 获取最新的技术动态和实践经验。
 
-欢迎您加入社区，共同探索 Spring AI 的无限可能！
+欢迎您加入社区，共同探索 Spring AI 的无限可能 (因群二维码有过期时间限制，请加群主二维码邀请进群，备注 Spring AI)！
 
 <p align="center">
-  <img width="189" alt="image" src="https://github.com/user-attachments/assets/18d946e0-3df9-4c83-9716-d607399a6e58" />
+  <img width="189" alt="image" src="docs/statics/my_chat.png" />
 </p>
 
 ## 🗂️ 项目结构
@@ -176,17 +177,18 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 
 #### 博客系列
 - [码匠的流水账--Spring AI  系列专栏](https://cloud.tencent.com/developer/column/72423) 因为作者没有进行专栏管理，所以是链接到了主页；此外这个系列的文章用来学习 Spring AI 的一些设计思路和实现方式非常不错，但是他是基于 M 系列版本写作的，所以有些内容可能会和最新版本不一致。
-- [深入解析 Spring AI 系列](https://www.cnblogs.com/guoxiaoyu/p/18666904) 作者貌似停更了...
+- [深入解析 Spring AI 系列](https://www.cnblogs.com/guoxiaoyu/p/18666904) 
 - [如何用Spring AI构建MCP Client-Server架构](https://spring.didispace.com/article/spring-ai-mcp.html)
-- [Building Effective Agents with Spring AI](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns) 强烈建议学习下
+- [Building Effective Agents with Spring AI](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns) 🌟🌟🌟🌟🌟
 - [Spring AI 大模型返回内容格式化源码分析及简单使用](https://juejin.cn/post/7378696051082199080)
 - [Spring AI EmbeddingModel 概念与源码分析](https://my.oschina.net/u/2391658/blog/18534829)
 - [全量RAG技术：更简单、更实用的实现方法 ✨](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=zh)
+- [Spring AI 框架原理与实战](https://juejin.cn/column/7375109287716372520) 🌟🌟🌟
 
 #### 视频系列
 - [How to Build Agents with Spring AI](https://www.youtube.com/watch?v=d7m6nJxfi0g)
 - [Spring AI 系列视频教程](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
-
+- [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
 大家如果有好的文章或资源，也欢迎提交 PR 或 Issue 进行补充和完善。下面开发和贡献指南。
 
 ## 🔧 开发指南

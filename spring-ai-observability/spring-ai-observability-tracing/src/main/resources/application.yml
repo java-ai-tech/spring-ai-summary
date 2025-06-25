@@ -1,0 +1,82 @@
+spring:
+  application:
+    name: spring-ai-observability
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      username: ${REDIS_USERNAME:}
+      password: ${REDIS_PASSWORD:}
+  ai:
+    openai:
+      api-key: ${spring.ai.openai.api-key}
+      chat:
+        base-url: https://dashscope.aliyuncs.com/compatible-mode
+        options:
+          model: qwen-plus
+      image:
+        api-key: ${spring.ai.openai.api-key}
+        base-url: https://dashscope.aliyuncs.com/api
+        options:
+          model: stable-diffusion-xl
+        images-path: /v1/services/aigc/text2image/image-synthesis
+      embedding:
+        # doc reference: https://bailian.console.aliyun.com/?switchAgent=12095181&productCode=p_efm&switchUserType=3&tab=api#/api/?type=model&url=https%3A%2F%2Fhelp.aliyun.com%2Fdocument_detail%2F2712515.html&renderType=iframe
+        base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+        embeddings-path: /embeddings
+        options:
+          model: text-embedding-v4
+    vectorstore:
+      redis:
+        initialize-schema: true
+        index-name: glmapper
+        prefix: glmapper_
+      observations:
+        # 记录向量存储查询响应内容
+        log-query-response: true
+
+    chat:
+      client:
+        observations:
+          # 是否记录聊天客户端提示内容
+          log-prompt: true
+      observations:
+        # 记录提示内容
+        log-prompt: true
+        # 记录完成内容
+        log-completion: true
+        # 在观察中包含错误日志
+        include-error-logging: true
+    image:
+      observations:
+        # 记录提示内容
+        log-prompt: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  # zipkin 配置
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0
+
+server:
+  port: 8088
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
