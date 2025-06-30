@@ -1,0 +1,32 @@
+spring:
+  ai:
+    openai:
+      api-key: ${spring.ai.openai.api-key}  # DashScope平台API密钥
+      chat:
+        base-url: https://dashscope.aliyuncs.com/compatible-mode  # 兼容模式基础URL
+        completions-path: /v1/chat/completions  # 补全路径
+        options:
+          model: qwen-plus  # 使用的模型类型
+    mcp:
+      client:
+        name: mcp-nacos-client  # 客户端名称（需全局唯一）
+        version: 1.0.0         # 客户端版本（语义化版本号）
+        request-timeout: 30s   # 请求超时时间
+        type: ASYNC            # 通信类型（ASYNC适用于响应式应用）
+        enabled: true          # 启用MCP客户端
+    alibaba:
+      mcp:
+        nacos:
+          namespace: 07fa822a-269c-4b42-a4ab-d243351e57aa  # Nacos命名空间ID
+          server-addr: 127.0.0.1:8848  # Nacos服务器地址
+          username: nacos      # Nacos认证用户名
+          password: nacos      # Nacos认证密码
+          client:
+            enabled: true    # 启用Nacos客户端
+            sse:
+              connections:
+                server1:
+                  service-name: weather-mcp-server  # 要连接的服务名称
+                  version: 1.0.0                    # 服务版本
+server:
+  port: 8082

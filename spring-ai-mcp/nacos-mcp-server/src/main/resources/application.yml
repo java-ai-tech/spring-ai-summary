@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: spring-ai-nacos-mcp
+  ai:
+    mcp:
+      server:
+        name: weather-mcp-server   # MCP服务名称（需全局唯一）
+        version: 1.0.0            # 服务版本（语义化版本号）
+        type: ASYNC               # 通信类型（ASYNC适用于响应式应用）
+        sse-message-endpoint: /mcp/messages  # SSE消息端点路径
+        capabilities:
+          tool: true              # 启用工具调用能力
+          resource: true          # 启用资源访问能力
+          prompt: true            # 启用提示词功能
+          completion: true        # 启用补全功能
+    alibaba:
+      mcp:
+        nacos:
+          namespace: 07fa822a-269c-4b42-a4ab-d243351e57aa  # Nacos命名空间ID，默认public，可自定义
+          server-addr: 127.0.0.1:8848  # Nacos服务器地址
+          username: nacos         # Nacos认证用户名
+          password: nacos         # Nacos认证密码
+          registry:
+            enabled: true       # 启用服务注册
+            service-group: mcp-server  # 服务分组
+            service-name: weather-mcp-server  # 服务名称（应与server.name一致）
+
+server:
+  port: 8081
