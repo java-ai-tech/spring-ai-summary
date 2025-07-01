@@ -50,6 +50,6 @@ mvn spring-boot:run
 ```
 
 ## 主要组件
-- `NacoseClientApplication` - 应用主类
+- `NacosClientApplication` - 应用主类
 - `ChatController` - 对话交互的REST控制器
 - `McpClientConfig` - MCP客户端配置类

@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NacoseClientApplication {
+public class NacosClientApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NacoseClientApplication.class, args);
+        SpringApplication.run(NacosClientApplication.class, args);
     }
 
 } 

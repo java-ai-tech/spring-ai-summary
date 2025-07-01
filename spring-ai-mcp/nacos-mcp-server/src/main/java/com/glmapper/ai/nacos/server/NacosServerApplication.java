@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class NacoseServerApplication {
+public class NacosServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NacoseServerApplication.class, args);
+        SpringApplication.run(NacosServerApplication.class, args);
     }
 
     // 注册工具回调

@@ -60,5 +60,5 @@ mvn spring-boot:run
 ```
 
 ## 主要组件
-- `NacoseServerApplication` - 应用主类
+- `NacosServerApplication` - 应用主类
 - `WeatherService` - 天气查询工具服务
