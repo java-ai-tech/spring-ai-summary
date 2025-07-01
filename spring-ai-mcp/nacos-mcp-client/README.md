@@ -14,7 +14,7 @@
 spring:
   ai:
     openai:
-      api-key: sk-281ba3f2d6e24c539fac28c57725a9d6  # DashScope平台API密钥
+      api-key: ${spring.ai.openai.api-key}  # DashScope平台API密钥
       chat:
         base-url: https://dashscope.aliyuncs.com/compatible-mode  # 兼容模式基础URL
         completions-path: /v1/chat/completions  # 补全路径
