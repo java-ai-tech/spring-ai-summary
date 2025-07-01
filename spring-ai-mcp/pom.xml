@@ -13,5 +13,7 @@
     <modules>
         <module>mcp-client</module>
         <module>mcp-server-weather</module>
+        <module>nacos-mcp-client</module>
+        <module>nacos-mcp-server</module>
     </modules>
 </project>
