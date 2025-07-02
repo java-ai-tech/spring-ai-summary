@@ -1,36 +1,36 @@
-
-## 🚀🚀🚀 Spring AI Summary
-
-![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary)
-
 <p align="left">
   <a href="README.md" target="_blank"><img src="https://img.shields.io/badge/lang-中文-red?logo=googletranslate" alt="中文" style="vertical-align:middle; margin-right:4px;"/></a>
   <a href="README_EN.md" target="_blank"><img src="https://img.shields.io/badge/lang-English-blue?logo=googletranslate" alt="English" style="vertical-align:middle; margin-right:4px;"/></a>
-  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
+  <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="document" style="vertical-align:middle; margin-right:4px;"/></a>
+  <img src="https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg" alt="Spring AI Summary" style="vertical-align:middle; margin-right:4px;"/>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary" alt="Visitors" style="vertical-align:middle; margin-right:4px;"/>
 </p>
 
-**Spring AI Summary** 是一个基于原生 **Spring AI** 开发的样例工程集合，旨在帮助开发者快速掌握 **Spring AI** 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，
-帮助开发者轻松上手并深入理解框架的核心概念。
+**Spring AI Summary** 是基于原生 **Spring AI** 框架的模块化示例工程集合，通过清晰的代码示例和详细文档，帮助开发者快速掌握 Spring AI 的核心功能。
 
-### 适合人群
+### 👥 适合人群
 Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初学者还是有经验的工程师，都可以通过本项目快速了解框架的核心功能，并将其应用到实际项目中。 通过 Spring AI Summary，你可以：
 
 - 掌握 Spring AI 的核心概念和功能。
 - 学习如何构建高效的 AI 应用。
 - 获取最新的技术动态和实践经验。
 
-欢迎您加入社区，共同探索 Spring AI 的无限可能 (因群二维码有过期时间限制，请加群主二维码邀请进群，备注 Spring AI)！
+**加入社区** 🎯 扫码加群主微信（备注：Spring AI），一起探索 Spring AI 的无限可能！
 
 <p align="center">
-  <img width="189" alt="image" src="docs/statics/my_chat.png" />
+  <img width="189" alt="社区交流群" src="docs/statics/my_chat.png" />
 </p>
 
-### 学习引导
+## 📖 学习路径
 
 如果你是第一次接触 Spring AI，建议先阅读 [Spring AI 官方文档](https://spring.io/projects/spring-ai) 以了解框架的基本概念和使用方法。然后可以通过本项目的各个模块进行实践，逐步深入理解框架的核心功能。
-本项目中，对于刚接入 Spring AI 的同学，强烈建议先从跑通 **spring-ai-chat** 模块开始，了解如何使用 Spring AI 进行聊天应用开发；其他一些模块能力基本还是以 chat 为基础的。
-接下来可以尝试 **spring-ai-tool-calling**、**spring-ai-vector**；最后再进行 MCP、RAG、AGENT 等更复杂的模块开发。
+
+**推荐学习顺序**：
+1. 📚 [Spring AI 官方文档](https://spring.io/projects/spring-ai) - 了解基础概念
+2. 💬 **spring-ai-chat** - 聊天应用开发（必选起点）
+3. 🔧 **spring-ai-tool-calling** - 工具调用能力
+4. 🧠 **spring-ai-vector** - 向量数据库集成
+5. 🚀 **MCP/RAG/AGENT** - 高级应用模式
 
 👇下面开启 Spring AI 之旅吧～
 
@@ -51,7 +51,7 @@ Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初
 ```bash
 # 克隆项目到本地
 git clone https://github.com/java-ai-tech/spring-ai-summary.git
-# 进入项目目录并且 compile 项目
+# 进入项目并编译
 cd spring-ai-summary && mvn clean compile -DskipTests
 ```
 
@@ -62,7 +62,7 @@ cd spring-ai-summary && mvn clean compile -DskipTests
 对于每个模块的 resource 文件夹下的 `application.yml`/`application.properties` 文件，根据你的需求配置相应的 API 密钥。如 **spring-ai-chat-deepseek** 模块：
 
 ```properties
-# because we do not use the OpenAI protocol
+# 示例：deepseek 模块配置
 spring.ai.deepseek.api-key=${spring.ai.deepseek.api-key}
 spring.ai.deepseek.base-url=https://api.deepseek.com
 spring.ai.deepseek.chat.completions-path=/v1/chat/completions
@@ -70,8 +70,7 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
 将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 [Wiki 页面](https://github.com/java-ai-tech/spring-ai-summary/wiki)进行查看。
 
-> 有一个一劳永逸的办法，将对应的 spring.ai.deepseek.api-key 添加到对应环境变量中，后续启动时会带进来，不用再去修改代码了对应的 application.yml,不用担心提交代码泄露 key
-将 IDEA 启动项中的环境变量添加 spring.ai.openai.api-key=sk-***************(你自己对应的 key)，运行项目时，会自动带入环境变量。 不过对应的子 module 都需要配置。
+> 💡 **安全提示**：使用环境变量存储 API 密钥，避免代码泄露。[申请密钥指南](https://github.com/java-ai-tech/spring-ai-summary/wiki)
 
 ### 3. ▶️ 运行示例
 
@@ -99,9 +98,9 @@ curl localhost:8081/api/deepseek/chatWithMetric?userInput="你是谁?"
 ```
 结果如下：
 
-![chat-ds-metrics.png](docs/statics/chat-ds-metrics.png)
+**成功标志** 🎉：看到类似响应即表示运行成功！
 
-你可以继续使用下面的请求来查看 Token 使用情况：
+![运行结果](docs/statics/chat-ds-metrics.png)
 
 ```bash
 # completion tokens
@@ -223,7 +222,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 * 2、本项目的所有代码和文档均由 [glmapper](https://github.com/glmapper) 独立开发和维护，欢迎大家提出意见和建议，如果对你有帮助，请给个 Star 支持一下哦！如果你有任何问题或建议，请在 GitHub 上提交 Issue 或 PR，或者通过[这里](http://www.glmapper.com/about)联系我。后续我将进一步将关于 **spring ai 的相关技术文章**同步发布到本仓库和个人微信公众号：**磊叔的技术博客**，也欢迎扫码关注。
 
 <p align="center">
-  <img src="docs/statics/wx-gzh.png" alt="wx-gzh.png" width="200"/>
+  <img src="docs/statics/wx-gzh.png" alt="微信公众号" width="200"/>
 </p>
 
 ## 🙏 致谢
