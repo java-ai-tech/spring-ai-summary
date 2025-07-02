@@ -34,7 +34,7 @@ public class ChatController {
     @GetMapping("/chatWithPrompt")
     public String prompt(@RequestParam String userInput, @RequestParam(required = false, defaultValue = "01") String promptType) {
         if ("01".equals(promptType)) {
-            this.promptTemplateService.prompt01(userInput);
+            return this.promptTemplateService.prompt01(userInput);
         } else if ("02".equals(promptType)) {
             return this.promptTemplateService.prompt02(userInput);
         } else if ("03".equals(promptType)) {
