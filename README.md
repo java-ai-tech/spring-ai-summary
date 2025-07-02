@@ -1,5 +1,5 @@
 
-## Spring AI Summary
+## 🚀🚀🚀 Spring AI Summary
 
 ![Spring AI Summary](https://img.shields.io/badge/spring--ai--summary-v1.0.0-blue.svg)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=java-ai-tech.spring-ai-summary)
@@ -10,22 +10,11 @@
   <a href="https://github.com/java-ai-tech/spring-ai-summary/wiki" target="_blank"><img src="https://img.shields.io/badge/doc-wiki-blue?logo=readthedocs" alt="doc" style="vertical-align:middle; margin-right:4px;"/></a>
 </p>
 
-
-
-🚀🚀🚀 Spring AI Summary 是一个基于原生 Spring AI 开发的样例工程集合，旨在帮助开发者快速掌握 Spring AI 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，帮助开发者轻松上手并深入理解框架的核心概念。
-
-### 项目特点
-
-- **模块化设计**：每个模块聚焦于一个功能领域，例如聊天、RAG（检索增强生成）、文本向量化、工具函数调用、会话记忆管理等，方便开发者按需学习和应用。
-- **实用示例**：每个模块都包含完整的示例代码和文档，展示 Spring AI 的实际应用场景，帮助开发者快速构建自己的 AI 应用。
-- **持续更新**：紧跟 Spring AI 的最新动态和版本更新，及时优化示例代码和文档，确保内容始终与框架保持同步。
-- **社区支持**：同步优质技术文章和实践经验，分享最佳实践，帮助开发者更好地理解和应用 Spring AI。
+**Spring AI Summary** 是一个基于原生 **Spring AI** 开发的样例工程集合，旨在帮助开发者快速掌握 **Spring AI** 框架的核心功能和使用方法。通过模块化设计，每个模块专注于特定功能领域，提供清晰的代码示例和详细的文档，
+帮助开发者轻松上手并深入理解框架的核心概念。
 
 ### 适合人群
-
-Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初学者还是有经验的工程师，都可以通过本项目快速了解框架的核心功能，并将其应用到实际项目中。
-
-通过 Spring AI Summary，您可以：
+Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初学者还是有经验的工程师，都可以通过本项目快速了解框架的核心功能，并将其应用到实际项目中。 通过 Spring AI Summary，你可以：
 
 - 掌握 Spring AI 的核心概念和功能。
 - 学习如何构建高效的 AI 应用。
@@ -37,46 +26,25 @@ Spring AI Summary 面向对 Spring AI 框架感兴趣的开发者，无论是初
   <img width="189" alt="image" src="docs/statics/my_chat.png" />
 </p>
 
-## 🗂️ 项目结构
+### 学习引导
 
-本工程采用模块化设计，按照功能特性主要划分为以下几个模块：
+如果你是第一次接触 Spring AI，建议先阅读 [Spring AI 官方文档](https://spring.io/projects/spring-ai) 以了解框架的基本概念和使用方法。然后可以通过本项目的各个模块进行实践，逐步深入理解框架的核心功能。
+本项目中，对于刚接入 Spring AI 的同学，强烈建议先从跑通 **spring-ai-chat** 模块开始，了解如何使用 Spring AI 进行聊天应用开发；其他一些模块能力基本还是以 chat 为基础的。
+接下来可以尝试 **spring-ai-tool-calling**、**spring-ai-vector**；最后再进行 MCP、RAG、AGENT 等更复杂的模块开发。
 
-```
-spring-ai-summary/
-├── spring-ai-chat/                   # 聊天模块
-│   ├── spring-ai-chat-openai/        # OpenAI 模型接入
-│   ├── spring-ai-chat-qwen/          # 通义千问模型接入
-│   ├── spring-ai-chat-doubao/        # 豆包模型接入
-│   ├── spring-ai-chat-deepseek/      # DeepSeek 模型接入
-│   ├── spring-ai-chat-multi/         # 多 chat 模型调用
-│   │   spring-ai-chat-ollama/        # 接入 ollma
-│   └── spring-ai-chat-multi-openai/  # 多 OpenAI 协议模型调用
-├── spring-ai-rag/                    # RAG 检索增强生成
-├── spring-ai-vector/                 # 文本向量化服务
-    |── spring-ai-vector-milvus/      # Milvus 向量存储
-    ├── spring-ai-vector-redis/       # redis 向量存储
-├── spring-ai-tool-calling/           # 工具函数调用示例
-├── spring-ai-chat-memory/            # 会话记忆管理
-    ├── spring-ai-chat-memory-jdbc    # 基于 jdbc 实现存储
-    ├── spring-ai-chat-memory-local   # 基于 内存 实现存储
-├── spring-ai-evaluation/             # AI 回答评估
-└── spring-ai-mcp/                    # MCP 示例
-    ├── spring-ai-mcp-server          # MCP 服务器
-    ├── spring-ai-mcp-client          # MCP 客户端
-└── spring-ai-agent/                  # agent 示例
-```
+👇下面开启 Spring AI 之旅吧～
 
 ## 🚀 快速开始
 
 ### ⚙️ 环境要求
 
-| 依赖项         | 版本/要求         | 说明                |
-| -------------- | ---------------- | ------------------- |
-| SpringBoot     | 3.3.6            |                     |
-| Spring AI      | 1.0.0            |                     |
-| JDK            | 21+              |                     |
-| Maven          | 3.6+             |                     |
-| Docker         | （用于运行 Milvus） |                     |
+| 依赖项         | 版本/要求                 | 说明                 |
+| -------------- |-----------------------|--------------------|
+| SpringBoot     | 3.3.6                 | -                  |
+| Spring AI      | 1.0.0                 | -                  |
+| JDK            | 21+                   | -                  |
+| Maven          | 3.6+                  | 强烈推荐使用 mvnd 代替 mvn |
+| Docker         | （用于运行 Milvus、Nacos 等） |                    |
 
 ### 1. 🧬 克隆项目
 
@@ -102,14 +70,13 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 ```
 将你的 `spring.ai.deepseek.api-key` 替换为实际的 API 密钥即可启动运行。关于如何申请 api key ，可以移步项目 [Wiki 页面](https://github.com/java-ai-tech/spring-ai-summary/wiki)进行查看。
 
-有一个一劳永逸的办法，将对应的spring.ai.deepseek.api-key添加到对应环境变量中，后续启动时会带进来，不用再去修改代码了对应的application.yml,不用担心提交代码泄露key
-将IDEA启动项中的环境变量添加spring.ai.openai.api-key=sk-***************(你自己对应的 key)，运行项目时，会自动带入环境变量。
-不过对应的子module每个模块都需要配置
-
+> 有一个一劳永逸的办法，将对应的 spring.ai.deepseek.api-key 添加到对应环境变量中，后续启动时会带进来，不用再去修改代码了对应的 application.yml,不用担心提交代码泄露 key
+将 IDEA 启动项中的环境变量添加 spring.ai.openai.api-key=sk-***************(你自己对应的 key)，运行项目时，会自动带入环境变量。 不过对应的子 module 都需要配置。
 
 ### 3. ▶️ 运行示例
 
 完成上述步骤后，你可以选择运行不同的示例模块来体验 Spring AI 的功能。如启动运行 **spring-ai-chat-deepseek** 模块（具体端口可以根据你自己的配置而定）：
+
 ```bash
 2025-06-04T14:18:43.939+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [           main] c.g.ai.chat.deepseek.DsChatApplication   : Starting DsChatApplication using Java 21.0.2 with PID 88446 (/Users/glmapper/Documents/projects/glmapper/spring-ai-summary/spring-ai-chat/spring-ai-chat-deepseek/target/classes started by glmapper in /Users/glmapper/Documents/projects/glmapper/spring-ai-summary)
 2025-06-04T14:18:43.941+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [           main] c.g.ai.chat.deepseek.DsChatApplication   : The following 1 profile is active: "deepseek"
@@ -125,7 +92,7 @@ spring.ai.deepseek.chat.options.model=deepseek-chat
 2025-06-04T14:18:45.175+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-06-04T14:18:45.176+08:00  INFO 88446 --- [spring-ai-chat-deepseek] [on(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 ```
-启动完成后，可以通过 cUrl、HTTPie 或 Postman 等工具进行测试。
+如果出现上述类似的启动日志，那么恭喜你，启动成功啦 🎉🎉🎉🎉🎉....，你已经打开了 Spring AI 的大门，接下来就可以开始探索各种功能模块了；启动完成后，可以通过 cUrl、HTTPie 或 Postman 等工具进行测试。
 
 ```bash
 curl localhost:8081/api/deepseek/chatWithMetric?userInput="你是谁?"
@@ -145,6 +112,7 @@ http://localhost:8081/actuator/metrics/ai.prompt.tokens
 http://localhost:8081/actuator/metrics/ai.total.tokens
 ```
 以 `ai.completion.tokens` 为例，结果如下：
+
 ```json
 {
    "name": "ai.completion.tokens",
@@ -191,11 +159,19 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
 大家如果有好的文章或资源，也欢迎提交 PR 或 Issue 进行补充和完善。下面开发和贡献指南。
 
-## 🔧 开发指南
+## 🔧 开发指南（代码、文档）
+
+首先，非常欢迎各位提交任何形式的贡献，包括但不限于**代码、文档、测试、代码注释**等等。但在提交贡献之前请遵循如下流程：
 
 ### 贡献代码
 
 1. **Fork 项目**
+
+如下图所示， fork 仓库到你个人仓库
+![how-to-fork.png](docs/statics/how-to-fork.png)
+
+2. **Clone 你个人仓库代码**
+
    ```bash
    # 在 GitHub 上 Fork 项目
    # 克隆你的 Fork 仓库
@@ -203,20 +179,18 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
    cd spring-ai-summary
    ```
 
-2. **创建特性分支**
+3. **创建特性分支**
    ```bash
    # 创建并切换到新的特性分支
    git checkout -b feature/your-feature-name
    ```
 
-3. **开发规范**
+4. **开发规范**
    - 遵循项目的代码风格和命名规范
-   - 确保代码通过所有测试
-   - 添加必要的单元测试
+   - 确保代码通过所有测试（如有）
    - 更新相关文档
-   - 提交信息遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
 
-4. **提交代码**
+5. **提交代码**
    ```bash
    # 添加修改的文件
    git add .
@@ -225,8 +199,8 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
    # 推送到你的 Fork 仓库
    git push origin feature/your-feature-name
    ```
-
-5. **创建 Pull Request**
+   
+6. **创建 Pull Request**
    - 在 GitHub 上创建 Pull Request
    - 填写 PR 描述，说明改动内容和原因
    - 等待代码审查和合并
@@ -261,7 +235,6 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - [Milvus](https://milvus.io) - 提供向量数据库支持
 
 本项目是一个完全开源项目，主要目的是汇聚更多优质的 Spring AI 相关的学习资源，当然**相关学习资源主要来源于网络，如有侵权，请联系删除！！！**；在此也对参与开源贡献和所有在技术社区分享技术的朋友们表示衷心的感谢！
-
 
 ## Star History
 
