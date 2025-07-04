@@ -134,7 +134,6 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 > 官方也有一个[学习资料汇总](https://github.com/spring-ai-community/awesome-spring-ai)，但主要是汇总的国外的一些资料，所以本项目更聚焦在汇总了一些国内的学习资源，供大家参考。
 
 #### 技术社区
-
 - [Spring AI 官方文档](https://spring.io/projects/spring-ai)
 - [Spring AI Alibaba 官方文档](https://github.com/alibaba/spring-ai-alibaba)
 
@@ -151,11 +150,19 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
 - [Spring AI EmbeddingModel 概念与源码分析](https://my.oschina.net/u/2391658/blog/18534829)
 - [全量RAG技术：更简单、更实用的实现方法 ✨](https://www.readme-i18n.com/FareedKhan-dev/all-rag-techniques?lang=zh)
 - [Spring AI 框架原理与实战](https://juejin.cn/column/7375109287716372520) 🌟🌟🌟
+- 大模型技术科普
+  - [LLM 系列（一）：发展历程篇](https://mp.weixin.qq.com/s/72omFtMqinJs4MMX41MCyw)
+  - [LLM 系列（二）：基础概念篇](https://mp.weixin.qq.com/s/Fg0bczAxejgKs_65kWxWSg)
+  - [LLM 系列（三）：架构模式篇](https://mp.weixin.qq.com/s/d6Y76I_Vxfmj6wa5sAN3uQ)
+  - [LLM 系列（四）：神奇数字篇](https://mp.weixin.qq.com/s/tEozMs4QWDYx5vrhitA9uQ)
+  - [LLM 系列（五）：模型训练篇](https://mp.weixin.qq.com/s/TK8rTcrjS1pfigQxj2mq8A)
 
 #### 视频系列
 - [How to Build Agents with Spring AI](https://www.youtube.com/watch?v=d7m6nJxfi0g)
 - [Spring AI 系列视频教程](https://www.youtube.com/watch?v=yyvjT0v3lpY&list=PLZV0a2jwt22uoDm3LNDFvN6i2cAVU_HTH)
 - [马克的技术工作坊](https://space.bilibili.com/1815948385) 🌟🌟🌟🌟🌟
+
+
 大家如果有好的文章或资源，也欢迎提交 PR 或 Issue 进行补充和完善。下面开发和贡献指南。
 
 ## 🔧 开发指南（代码、文档）
