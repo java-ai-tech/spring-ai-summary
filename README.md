@@ -156,6 +156,7 @@ http://localhost:8081/actuator/metrics/ai.total.tokens
   - [LLM 系列（三）：架构模式篇](https://mp.weixin.qq.com/s/d6Y76I_Vxfmj6wa5sAN3uQ)
   - [LLM 系列（四）：神奇数字篇](https://mp.weixin.qq.com/s/tEozMs4QWDYx5vrhitA9uQ)
   - [LLM 系列（五）：模型训练篇](https://mp.weixin.qq.com/s/TK8rTcrjS1pfigQxj2mq8A)
+  - [LLM 系列（五）：模型推理篇](https://mp.weixin.qq.com/s/tjXme2CWnUxLmawDDiylWQ)
 
 #### 视频系列
 - [How to Build Agents with Spring AI](https://www.youtube.com/watch?v=d7m6nJxfi0g)
