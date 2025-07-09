@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: spring-ai-evaluator-optimizer
+  profiles:
+    active: evaluator-optimizer
+  ai:
+    openai:
+      api-key: ${spring.ai.api-key}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.7
+
+    deepseek:
+      api-key: ${spring.ai.api-key}
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        completions-path: /v1/chat/completions
+        options:
+          model: qwen-max
+          temperature: 0.3
+
+server:
+  port: 8084
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.glmapper.ai.evaluator.optimizer: DEBUG
+    org.springframework.ai: DEBUG

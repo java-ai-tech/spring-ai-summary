@@ -19,6 +19,7 @@
     <modules>
         <module>spring-ai-workflow</module>
         <module>spring-ai-agent-orchestrator</module>
+        <module>spring-ai-evaluator-optimizer</module>
     </modules>
 
 </project> 
