@@ -54,4 +54,9 @@ public class ChatController {
         SimpleMetricAdvisor metricAdvisor = new SimpleMetricAdvisor();
         return this.deepSeekChatClient.prompt().advisors(metricAdvisor).user(userInput).call().content();
     }
+
+    @GetMapping("/chat")
+    public String chatWithMemory(@RequestParam String userInput){
+        return this.deepSeekChatClient.prompt().user(userInput).call().content();
+    }
 }
