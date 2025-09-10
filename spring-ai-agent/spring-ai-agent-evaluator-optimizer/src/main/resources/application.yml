@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-ai-evaluator-optimizer
+    name: spring-ai-agent-evaluator-optimizer
   profiles:
     active: evaluator-optimizer
   ai:

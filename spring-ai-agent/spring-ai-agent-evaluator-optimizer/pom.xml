@@ -7,14 +7,10 @@
         <artifactId>spring-ai-agent</artifactId>
         <version>0.0.1</version>
     </parent>
-    <artifactId>spring-ai-evaluator-optimizer</artifactId>
-    <name>spring-ai-evaluator-optimizer</name>
+    <artifactId>spring-ai-agent-evaluator-optimizer</artifactId>
+    <name>spring-ai-agent-evaluator-optimizer</name>
     <description>Evaluator Optimizer Agent Pattern Implementation</description>
 
-    <properties>
-        <java.version>21</java.version>
-        <spring-ai.version>1.0.0</spring-ai.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -45,12 +41,4 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

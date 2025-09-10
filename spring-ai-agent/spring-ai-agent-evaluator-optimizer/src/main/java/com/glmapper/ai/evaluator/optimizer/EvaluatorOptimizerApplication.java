@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * This application demonstrates the Evaluator-Optimizer pattern for iterative
  * refinement of AI-generated solutions through generation, evaluation, and optimization cycles.
  * 
- * @author glmapper
+ * @author mrliu
  */
 @SpringBootApplication
 public class EvaluatorOptimizerApplication {

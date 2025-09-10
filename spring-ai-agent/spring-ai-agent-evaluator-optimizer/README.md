@@ -6,7 +6,7 @@
 
 ### 1. 启动应用
 ```bash
-cd spring-ai-evaluator-optimizer
+cd spring-ai-agent-evaluator-optimizer
 mvn spring-boot:run
 ```
 
@@ -58,7 +58,7 @@ curl -X POST "http://localhost:8084/api/evaluator-optimizer/solve-advanced" \
 
 ### 环境变量
 
-应用支持多种AI模型配置，当前使用阿里云兼容模式：
+应用支持OpenAI协议兼容的多种AI模型配置，示例为阿里云兼容模式：
 
 ```yaml
 spring:
@@ -118,7 +118,7 @@ curl http://localhost:8084/api/evaluator-optimizer/health
     "第1次迭代 - 评分: 9.5, 可接受: true",
     "在第1次迭代收敛，评分9.5"
   ],
-  "evaluationHistory": [...],
+  "evaluationHistory": [],
   "totalIterations": 1,
   "finalScore": 9.5,
   "converged": true
