@@ -38,7 +38,7 @@ User-Agent: HTTPie
         "fieldName": "content",
         "dataType": "VarChar",
         "elementTypeParams": {
-          "max_length": 512000
+          "max_length": 65535
         }
       },
       {
