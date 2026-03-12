@@ -11,15 +11,11 @@
     <packaging>pom</packaging>
     <name>spring-ai-agent</name>
 
-    <properties>
-        <java.version>21</java.version>
-        <spring-ai.version>1.0.0</spring-ai.version>
-    </properties>
-
     <modules>
         <module>spring-ai-workflow</module>
         <module>spring-ai-agent-orchestrator</module>
         <module>spring-ai-agent-evaluator-optimizer</module>
+        <module>spring-ai-agent-react</module>
     </modules>
 
 </project> 

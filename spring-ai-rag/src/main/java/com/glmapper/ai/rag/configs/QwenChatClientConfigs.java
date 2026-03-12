@@ -1,7 +1,6 @@
 package com.glmapper.ai.rag.configs;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.vectorstore.QuestionAnswerAdvisor;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.context.annotation.Bean;
@@ -30,7 +29,7 @@ public class QwenChatClientConfigs {
         //return ChatClient.builder(chatModel).build();
         // build with Default System Text
         return ChatClient.builder(chatModel)
-                .defaultAdvisors(new QuestionAnswerAdvisor(vectorStore))
+//                .defaultAdvisors(new QuestionAnswerAdvisor(vectorStore))
                 .defaultSystem("You are a friendly chat bot that answers question with json always")
                 .build();
     }

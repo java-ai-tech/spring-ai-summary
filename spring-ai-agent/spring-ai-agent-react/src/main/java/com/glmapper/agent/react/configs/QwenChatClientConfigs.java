@@ -1,4 +1,4 @@
-package com.glmapper.ai.chat.qwen.configs;
+package com.glmapper.agent.react.configs;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.openai.OpenAiChatModel;
