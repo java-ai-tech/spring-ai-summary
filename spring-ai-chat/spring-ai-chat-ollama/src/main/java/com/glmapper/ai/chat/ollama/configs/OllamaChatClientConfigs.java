@@ -25,7 +25,8 @@ public class OllamaChatClientConfigs {
     @Bean
     public ChatClient chatClient(OllamaChatModel chatModel) {
         return ChatClient.builder(chatModel)
-                .defaultSystem("You are a friendly chat bot that answers question with json always")
+//                .defaultSystem("You are a friendly chat bot that answers question with json always")
+                .defaultSystem("你是一个智能助手，请用自然语言形式回答")
                 .build();
     }
 }
